@@ -242,6 +242,34 @@ def coleta_ano(db, ano, cargo, uf, pasta, fonte_id):
                 f"{ano}: {len(com_bem)} de {len(mapa_sq)} candidatos com bens declarados"))
     print(f"  candidatos com bens declarados: {len(com_bem)}/{len(mapa_sq)}")
 
+    # ---- motivo de indeferimento/cassacao do registro (NAO e historico criminal -
+    # e sobre o registro da candidatura em si; ver comentario no schema.sql) ----
+    try:
+        zm, url_m = baixar("motivo_cassacao", ano, pasta)
+    except Exception as e:
+        db.execute("INSERT INTO log_coleta(fonte_id,bloco,data_consulta,resultado,detalhe) VALUES(?,?,?,?,?)",
+                   (fonte_id, "motivo_indeferimento", data, "erro", f"{ano}: {e}"))
+        print(f"  AVISO: motivo de indeferimento {ano} nao verificado ({e})")
+    else:
+        nome_m, rm = abrir_csv(zm, "BRASIL" if cargo == "PRES" else uf)
+        exige_colunas(rm, ["SQ_CANDIDATO", "DS_TP_MOTIVO", "DS_MOTIVO"], nome_m)
+        db.executemany("DELETE FROM motivo_indeferimento WHERE candidatura_id=?",
+                        [(cid,) for cid in mapa_sq.values()])
+        n_motivos = 0
+        for row in rm:
+            sq = limpa(row["SQ_CANDIDATO"])
+            if sq not in mapa_sq:
+                continue
+            db.execute("""INSERT INTO motivo_indeferimento(candidatura_id,nr_processo,tipo_motivo,motivo,
+                          fonte_id,url_origem,data_consulta) VALUES(?,?,?,?,?,?,?)""",
+                       (mapa_sq[sq], limpa(row.get("NR_PROCESSO")), limpa(row["DS_TP_MOTIVO"]),
+                        limpa(row["DS_MOTIVO"]), fonte_id, url_m, data))
+            n_motivos += 1
+        db.execute("INSERT INTO log_coleta(fonte_id,bloco,data_consulta,resultado,detalhe) VALUES(?,?,?,?,?)",
+                   (fonte_id, "motivo_indeferimento", data, "encontrado" if n_motivos else "nao_encontrado",
+                    f"{ano}: {n_motivos} motivos de indeferimento/cassacao em {nome_m}"))
+        print(f"  motivos de indeferimento/cassacao: {n_motivos}")
+
 
 def main():
     ap = argparse.ArgumentParser()

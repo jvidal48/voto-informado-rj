@@ -247,10 +247,42 @@ corretamente; ficha de candidato individual (ex: Alaide Melo, nº 7004,
 AVANTE) abriu normalmente com patrimônio e aviso de "não coletado" para
 processos, igual aos outros cargos.
 
-**Processos judiciais**: investigação da fonte ainda pendente (a decisão foi
-não arriscar implementar sem confirmar uma fonte oficial em lote — o
-DivulgaCandContas mostra isso por candidato individual, não como arquivo
-aberto único encontrado até agora).
+## 5f. Investigação de "processos e condenações" — concluída, com decisão
+
+Investigadas 3 fontes possíveis do TSE:
+
+1. **Dataset "Motivo da Cassação"** (`motivo_cassacao_<ano>.zip`, nacional,
+   CSV estruturado) — mas é sobre o **motivo de indeferimento/cassação do
+   REGISTRO da candidatura** perante a Justiça Eleitoral (ex: "ausência de
+   condição de elegibilidade"), quase sempre com `NR_PROCESSO=-1` — **não é**
+   histórico criminal nem condenação da pessoa.
+2. **Dataset "Certidão Criminal" por UF** (`certidao_criminal_2026_RJ.zip`)
+   — inspecionado e é **10.693 arquivos PDF individuais (1,66 GB)**, sem
+   dado estruturado. Extrair "status" disso exigiria OCR + interpretação
+   jurídica automática, o que decidi **não fazer**: um erro de leitura
+   poderia rotular alguém como condenado incorretamente — exatamente o
+   risco que a regra "processo não é condenação" existe para evitar.
+3. A aba "Processos" do próprio DivulgaCandContas (testada ao vivo) mostra
+   **processos eleitorais da candidatura** (registro, prestação de contas,
+   DRAP) — não histórico criminal/condenações da pessoa.
+
+**Conclusão: não existe fonte oficial em lote, estruturada e segura, para
+"processos e condenações" como o app promete hoje.** Decisão (do usuário,
+após eu apresentar as opções): manter a seção "Processos e condenações"
+como "não coletado nesta versão" (honesto, sem risco), e em vez disso
+**adicionar só o dado 1 (Motivo da Cassação)**, numa seção **separada e
+claramente rotulada**, com aviso explícito de que não é histórico criminal.
+
+Implementado: nova tabela `motivo_indeferimento` (schema.sql, separada da
+tabela `processo` para não confundir os dois conceitos), coleta via
+`coleta_tse.py` (bloco novo, idempotente), exportado em `data.json` e
+exibido no `index.html` numa seção própria com aviso âmbar. Contagens após
+rodar para os 5 cargos (2026, RJ): Governador 1, Senador 3, Presidente 2,
+Dep. Federal 66, Dep. Estadual 98 candidatos com motivo registrado.
+
+O arquivo `certidao_criminal_2026_RJ.zip` (1,66 GB) não tem uso pelo motivo
+acima — perguntei ao usuário se posso apagá-lo (não fiz isso sem
+autorização, por regra do projeto).
 
 ## 7. Erros durante o processo (registrados, não escondidos)
 

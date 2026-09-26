@@ -38,6 +38,9 @@ for cargo in a.cargos:
             data_ultima_movimentacao, url_origem, data_consulta FROM processo
             WHERE pessoa_id=? AND publicavel=1""", (c["pid"],))
         c["processos_coletados"] = bool(q("SELECT 1 FROM log_coleta WHERE bloco='processo' AND pessoa_id=? LIMIT 1", (c["pid"],)))
+        # NAO e historico criminal - motivo de indeferimento/cassacao do REGISTRO da candidatura (fonte TSE)
+        c["motivo_indeferimento"] = q("""SELECT tipo_motivo, motivo, nr_processo FROM motivo_indeferimento
+            WHERE candidatura_id=?""", (c["cid"],))
         del c["cid"], c["pid"]
     cargos_out[cargo] = {"nome": nome_cargo[0] if nome_cargo else cargo, "candidatos": cands}
     print(f"{cargo}: {len(cands)} candidatos exportados")

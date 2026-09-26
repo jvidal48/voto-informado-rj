@@ -126,6 +126,23 @@ CREATE TABLE processo (
 );
 CREATE INDEX idx_processo_pessoa ON processo(pessoa_id);
 
+-- Motivo de indeferimento/cassacao do REGISTRO DA CANDIDATURA (fonte: TSE,
+-- dataset "Motivo da Cassacao"). ISTO NAO E HISTORICO CRIMINAL/PROCESSO
+-- JUDICIAL DA PESSOA - e uma decisao administrativo-eleitoral sobre o
+-- registro em si (ex: "ausencia de condicao de elegibilidade"). Mantido em
+-- tabela separada de "processo" para nao confundir os dois conceitos.
+CREATE TABLE motivo_indeferimento (
+    id              INTEGER PRIMARY KEY,
+    candidatura_id  INTEGER NOT NULL REFERENCES candidatura(id),
+    nr_processo     TEXT,
+    tipo_motivo     TEXT NOT NULL,
+    motivo          TEXT NOT NULL,
+    fonte_id        INTEGER NOT NULL REFERENCES fonte(id),
+    url_origem      TEXT NOT NULL,
+    data_consulta   TEXT NOT NULL
+);
+CREATE INDEX idx_motivo_indef_candidatura ON motivo_indeferimento(candidatura_id);
+
 -- Log de cada rodada de coleta (por bloco: candidatura / patrimonio / processo).
 -- pessoa_id fica NULL nos blocos de candidatura/patrimonio (coleta em lote);
 -- e preenchido quando a coleta de processos, por pessoa, existir.
