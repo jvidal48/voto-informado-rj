@@ -215,10 +215,37 @@ julgamento de valor.
 Também corrigido um typo (`Republica` sem acento) na tabela `cargo` do
 schema, no banco já existente e no seed do schema.sql.
 
-**Deputado Federal e Deputado Estadual (RJ) ficaram de fora por enquanto** —
-são ~2.000 candidatos juntos (793 + 1.188 no RJ), uma escala bem maior que
-exige repensar performance de exportação/renderização antes de simplesmente
-rodar o mesmo pipeline.
+## 5e. Deputado Federal e Deputado Estadual (RJ) adicionados
+
+Mesmo processo, mesmos zips já baixados:
+
+```
+python coleta_tse.py --cargo DEP_FED --uf RJ --anos 2026 --zip-dir zips
+python coleta_tse.py --cargo DEP_EST --uf RJ --anos 2026 --zip-dir zips
+```
+
+| Cargo | Candidaturas | Bate com o DivulgaCandContas? |
+|---|---|---|
+| Deputado Federal (RJ) | 793 | Sim |
+| Deputado Estadual (RJ) | 1.188 | Sim |
+
+`data.json` final (5 cargos): 2,88 MB, exportado em ~1,3s. Testado
+localmente sem travar.
+
+Ajustes de escala no `index.html`:
+- Abas de cargo agora rolam horizontalmente (não quebram o layout).
+- Cargos com mais de 60 candidatos (`LIMIAR_BUSCA`) não renderizam a lista
+  inteira de cara — pedem para digitar algo antes (evita travar o
+  navegador/relayout com ~800-1200 cards de uma vez e também é melhor UX,
+  já que ninguém rola manualmente 1000 candidatos).
+- Busca com debounce (150 ms) nesses cargos grandes.
+- Resultado limitado a 200 cards por vez, com aviso para refinar a busca se
+  passar disso.
+
+Testado: busca "silva" em Deputado Federal retornou 137 resultados
+corretamente; ficha de candidato individual (ex: Alaide Melo, nº 7004,
+AVANTE) abriu normalmente com patrimônio e aviso de "não coletado" para
+processos, igual aos outros cargos.
 
 **Processos judiciais**: investigação da fonte ainda pendente (a decisão foi
 não arriscar implementar sem confirmar uma fonte oficial em lote — o

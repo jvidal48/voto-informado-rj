@@ -43,7 +43,8 @@ const dt=s=>s?new Date(s).toLocaleDateString("pt-BR"):"data não informada";
 const STATUS={em_andamento:"Processo em andamento (sem decisão final)",condenacao_1a_instancia:"Condenação em 1ª instância (cabe recurso)",condenacao_colegiada:"Condenação por órgão colegiado (ainda pode haver recurso)",transitado_em_julgado_condenacao:"Condenação transitada em julgado (sem mais recursos)",absolvicao:"Absolvição",arquivamento:"Arquivado",extincao_punibilidade:"Extinção da punibilidade",status_desconhecido:"Status não identificado"};
 const ORDEM_CARGOS=["PRES","GOV","SEN","DEP_FED","DEP_EST"];
 const atencaoSituacao=s=>/INDEFER|CASSAD|RENUNCI|INAPTO/i.test(s||"");
-let D, cargoAtual;
+const LIMIAR_BUSCA=60; // cargos com mais candidatos que isso exigem digitar algo antes de listar
+let D, cargoAtual, debounce;
 
 fetch("data.json").then(r=>r.json()).then(d=>{
   D=d;
@@ -56,14 +57,17 @@ fetch("data.json").then(r=>r.json()).then(d=>{
 
 function lista(){
   const cargo=D.cargos[cargoAtual];
+  const grande=cargo.candidatos.length>LIMIAR_BUSCA;
   $("#sub").textContent=`Dados gerados em ${dt(D.gerado_em)} · ${cargo.candidatos.length} candidato(s) a ${cargo.nome.toLowerCase()}`;
-  app.innerHTML=`<input id="q" placeholder="Buscar por nome, número ou partido" aria-label="Buscar candidato"><p class="count" id="cnt"></p><div id="l"></div>`;
-  const render=()=>{const t=$("#q").value.toLowerCase();
+  app.innerHTML=`<input id="q" placeholder="${grande?`Digite para buscar entre ${cargo.candidatos.length} candidatos (nome, número ou partido)`:"Buscar por nome, número ou partido"}" aria-label="Buscar candidato"><p class="count" id="cnt"></p><div id="l"></div>`;
+  const render=()=>{const t=$("#q").value.trim().toLowerCase();
+    if(grande&&!t){$("#cnt").textContent="";$("#l").innerHTML=`<p class="mut">Digite ao menos uma letra para buscar entre os ${cargo.candidatos.length} candidatos.</p>`;return}
     const filtrados=cargo.candidatos.filter(c=>(c.nome_completo+" "+(c.nome_urna||"")+" "+c.numero+" "+(c.partido||"")).toLowerCase().includes(t));
     $("#cnt").textContent=t?`${filtrados.length} resultado(s)`:"";
-    $("#l").innerHTML=filtrados.map(c=>{const i=cargo.candidatos.indexOf(c);
-      return `<div class="card"><button class="cand" data-i="${i}"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br><span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"partido não informado")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"situação não informada")}</span></button></div>`}).join("")||'<p class="mut">Nenhum candidato encontrado.</p>'};
-  $("#q").oninput=render;render();
+    $("#l").innerHTML=filtrados.slice(0,200).map(c=>{const i=cargo.candidatos.indexOf(c);
+      return `<div class="card"><button class="cand" data-i="${i}"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br><span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"partido não informado")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"situação não informada")}</span></button></div>`}).join("")||'<p class="mut">Nenhum candidato encontrado.</p>';
+    if(filtrados.length>200)$("#l").insertAdjacentHTML("beforeend",`<p class="mut">Mostrando os 200 primeiros de ${filtrados.length}. Refine a busca para ver os demais.</p>`)};
+  $("#q").oninput=()=>{clearTimeout(debounce);debounce=setTimeout(render,grande?150:0)};render();
   $("#l").onclick=e=>{const b=e.target.closest("button.cand");if(b)ficha(+b.dataset.i)};
 }
 
