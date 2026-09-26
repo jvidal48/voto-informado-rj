@@ -41,6 +41,17 @@ for cargo in a.cargos:
         # NAO e historico criminal - motivo de indeferimento/cassacao do REGISTRO da candidatura (fonte TSE)
         c["motivo_indeferimento"] = q("""SELECT tipo_motivo, motivo, nr_processo FROM motivo_indeferimento
             WHERE candidatura_id=?""", (c["cid"],))
+        # Votacoes no Congresso (so quem e/foi deputado federal, vinculado por CPF - fonte Camara dos Deputados)
+        parl = q("SELECT id, nome_civil, url_origem FROM parlamentar WHERE pessoa_id=?", (c["pid"],))
+        if parl:
+            c["parlamentar"] = {"nome_civil": parl[0]["nome_civil"], "url_origem": parl[0]["url_origem"]}
+            c["votos_congresso"] = q("""SELECT pa.tipo, pa.numero, pa.ano, pa.ementa, pa.turno,
+                pa.data_votacao, pa.aprovada, pa.placar, v.voto, pa.url_origem
+                FROM voto_parlamentar v JOIN pauta pa ON pa.id=v.pauta_id
+                WHERE v.parlamentar_id=? ORDER BY pa.data_votacao""", (parl[0]["id"],))
+        else:
+            c["parlamentar"] = None
+            c["votos_congresso"] = []
         del c["cid"], c["pid"]
     cargos_out[cargo] = {"nome": nome_cargo[0] if nome_cargo else cargo, "candidatos": cands}
     print(f"{cargo}: {len(cands)} candidatos exportados")

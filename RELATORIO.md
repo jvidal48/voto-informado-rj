@@ -282,7 +282,69 @@ Dep. Federal 66, Dep. Estadual 98 candidatos com motivo registrado.
 
 O arquivo `certidao_criminal_2026_RJ.zip` (1,66 GB) não tem uso pelo motivo
 acima — perguntei ao usuário se posso apagá-lo (não fiz isso sem
-autorização, por regra do projeto).
+autorização, por regra do projeto). Ele optou por manter.
+
+## 5g. Votações no Congresso (Câmara dos Deputados) — nova funcionalidade
+
+A pedido do usuário ("cara votou o que? tipo escala 6x1"), implementado o
+registro de **como cada candidato votou em PECs no Congresso**, para quem
+já foi/é deputado federal.
+
+**Fonte nova, fora do domínio TSE**: `dadosabertos.camara.leg.br` (API
+oficial da Câmara dos Deputados). Expansão de escopo feita a pedido
+explícito do usuário — mantém o mesmo princípio de "só fonte oficial".
+
+**Vínculo candidato → deputado**: por CPF (não por nome), verificado
+diretamente contra a API (testado com Benedita da Silva: CPF e nome
+completo idênticos nas duas fontes). **50 dos nossos candidatos de 2026**
+batem com algum deputado federal já eleito nesta legislatura.
+
+**Seleção das ~30 pautas: 100% mecânica**, conforme decidido com o usuário
+— nenhuma escolha temática humana:
+1. Pega toda PEC apresentada na legislatura atual (57ª, desde 01/02/2023).
+2. Para cada uma, procura a **votação de mérito** em Plenário (identificada
+   pelo próprio texto oficial da Câmara: *"Aprovada, em primeiro/segundo
+   turno, a Proposta de Emenda à Constituição..."*), ignorando votações de
+   requerimento processual ("Aprovado o Requerimento...") e de redação
+   final.
+3. Quando a PEC foi **apensada** a outra (absorvida por uma "PEC
+   principal"), segue a cadeia via o campo oficial `despacho` até achar
+   onde a votação de mérito realmente aconteceu. Exemplo real encontrado:
+   a PEC 8/2025 (jornada de 4 dias) foi desapensada da PEC 221/2019
+   (principal) após esta ser aprovada em 27/05/2026 — o voto de cada
+   deputado foi coletado na PEC 221/2019, não na 8/2025.
+
+**Resultado**: das 76 PECs apresentadas nesta legislatura, **8 tiveram
+votação de mérito registrada em Plenário até agora** (as outras 68 ainda
+tramitam ou nunca chegaram ao Plenário — menos que os ~30 estimados
+inicialmente, mas é o número real, sem forçar). Entre elas está a
+**PEC 221/2019** (fim da escala 6x1 / redução de jornada), aprovada em
+27/05/2026 com 461 votos a favor.
+
+**Confirmado com a fonte bruta** (não só pela nossa exportação): o voto do
+deputado Carlos Jordy (PL) na PEC 221/2019 foi checado diretamente via
+`curl` na API da Câmara e bateu exatamente com o que nosso app mostra
+("Sim").
+
+**Números finais**: 50 parlamentares vinculados, 8 pautas, 305 votos
+individuais registrados (só dos candidatos da nossa base, não de todos os
+513 deputados).
+
+**Limitações registradas na tela** (não escondidas):
+- Só PECs (emendas constitucionais), não projetos de lei comuns (PLs) —
+  por isso um deputado pode ter votado diferente numa PEC e num PL sobre o
+  mesmo tema (ex: a PEC da jornada de trabalho é diferente do PL 1838/26
+  que trata dos detalhes da escala 6x1 — só a PEC está coletada).
+  Se quiser, dá pra estender a mesma lógica para PLs de alta relevância
+  no futuro.
+- Só Câmara dos Deputados — Senado Federal não expõe CPF em nenhum
+  endpoint público, então não foi incluído (evita risco de homônimo).
+- Só cobre quem é/foi deputado federal — não afeta candidatos a
+  Governador/Presidente/Estadual que nunca passaram pela Câmara.
+
+Script novo: `coleta_camara.py` (com cache local em `cache_camara/` pra não
+bater na API à toa). Tabelas novas no schema: `parlamentar`, `pauta`,
+`voto_parlamentar`.
 
 ## 7. Erros durante o processo (registrados, não escondidos)
 

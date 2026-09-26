@@ -143,6 +143,58 @@ CREATE TABLE motivo_indeferimento (
 );
 CREATE INDEX idx_motivo_indef_candidatura ON motivo_indeferimento(candidatura_id);
 
+-- Vinculo entre uma pessoa e um parlamentar da Camara dos Deputados,
+-- confirmado por CPF (fonte: dadosabertos.camara.leg.br - dominio oficial
+-- diferente do TSE, usado aqui a pedido explicito do usuario para a
+-- funcionalidade de votacoes no Congresso).
+CREATE TABLE parlamentar (
+    id              INTEGER PRIMARY KEY,
+    pessoa_id       INTEGER NOT NULL UNIQUE REFERENCES pessoa(id),
+    casa            TEXT NOT NULL CHECK (casa IN ('camara')),
+    id_externo      TEXT NOT NULL,
+    nome_civil      TEXT NOT NULL,
+    fonte_id        INTEGER NOT NULL REFERENCES fonte(id),
+    url_origem      TEXT NOT NULL,
+    data_consulta   TEXT NOT NULL,
+    UNIQUE (casa, id_externo)
+);
+
+-- Uma pauta = uma PEC que teve votacao de merito registrada em plenario,
+-- na legislatura atual. Selecao 100% mecanica (toda PEC com votacao de
+-- merito encontrada entra - sem escolha tematica) para nao correr risco
+-- de parecer viezada.
+CREATE TABLE pauta (
+    id              INTEGER PRIMARY KEY,
+    casa            TEXT NOT NULL CHECK (casa IN ('camara')),
+    tipo            TEXT NOT NULL,
+    numero          TEXT NOT NULL,
+    ano             INTEGER NOT NULL,
+    ementa          TEXT NOT NULL,
+    turno           TEXT,
+    id_votacao_externo TEXT NOT NULL,
+    data_votacao    TEXT,
+    aprovada        INTEGER,
+    placar          TEXT,
+    fonte_id        INTEGER NOT NULL REFERENCES fonte(id),
+    url_origem      TEXT NOT NULL,
+    data_consulta   TEXT NOT NULL,
+    UNIQUE (casa, id_votacao_externo)
+);
+
+-- Voto individual de um parlamentar numa pauta.
+CREATE TABLE voto_parlamentar (
+    id              INTEGER PRIMARY KEY,
+    parlamentar_id  INTEGER NOT NULL REFERENCES parlamentar(id),
+    pauta_id        INTEGER NOT NULL REFERENCES pauta(id),
+    voto            TEXT NOT NULL,
+    fonte_id        INTEGER NOT NULL REFERENCES fonte(id),
+    url_origem      TEXT NOT NULL,
+    data_consulta   TEXT NOT NULL,
+    UNIQUE (parlamentar_id, pauta_id)
+);
+CREATE INDEX idx_voto_parlamentar_pauta ON voto_parlamentar(pauta_id);
+CREATE INDEX idx_voto_parlamentar_parlamentar ON voto_parlamentar(parlamentar_id);
+
 -- Log de cada rodada de coleta (por bloco: candidatura / patrimonio / processo).
 -- pessoa_id fica NULL nos blocos de candidatura/patrimonio (coleta em lote);
 -- e preenchido quando a coleta de processos, por pessoa, existir.

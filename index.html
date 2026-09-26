@@ -79,13 +79,16 @@ function ficha(i){
   const proc=c.processos.length?c.processos.map(p=>`<div class="card"><strong>${esc(STATUS[p.status_atual]||p.status_atual)}</strong><br>Nº ${esc(p.numero_cnj||"não informado")} · ${esc(p.tribunal||"")}<br>${esc(p.resultado_descricao||"")}<br><span class="mut">Consultado em ${dt(p.data_consulta)}</span></div>`).join(""):`<p><strong>Não coletado nesta versão.</strong> A ausência de processos aqui <u>não significa</u> que não existam. Verifique a certidão criminal do candidato no <a href="https://divulgacandcontas.tse.jus.br">DivulgaCandContas</a> e nos sites dos tribunais.</p>`;
   const hom=c.vinculo_confianca==="nao_confirmado"?`<div class="warn">Atenção a homônimos: o histórico de eleições anteriores foi ligado por nome e data de nascimento, sem confirmação por CPF. Confira antes de tirar conclusões.</div>`:"";
   const motivo=c.motivo_indeferimento.length?`<h3>Motivo de indeferimento/cassação do registro</h3><div class="warn"><strong>Atenção:</strong> isto é sobre o <u>registro da candidatura</u> perante a Justiça Eleitoral — <u>não é</u> histórico criminal nem condenação da pessoa.</div>${c.motivo_indeferimento.map(m=>`<div class="card">${esc(m.tipo_motivo)}: <strong>${esc(m.motivo)}</strong>${m.nr_processo&&m.nr_processo!=="-1"?`<br><span class="mut">Processo nº ${esc(m.nr_processo)}</span>`:""}</div>`).join("")}`:"";
+  const congresso=c.parlamentar?`<h3>Como votou no Congresso (Câmara dos Deputados)</h3>
+    <p class="mut">É (ou foi) deputado federal (<a href="${esc(c.parlamentar.url_origem)}">perfil oficial na Câmara</a>). Mostra o voto em <strong>todas</strong> as PECs que tiveram votação de mérito em Plenário nesta legislatura — critério mecânico (toda PEC votada entra), sem escolha temática.</p>
+    ${c.votos_congresso.length?`<table><tr><th>PEC</th><th title="${esc(c.votos_congresso.map(v=>v.ementa).join(' | '))}">Ementa</th><th>Voto</th><th>Data</th></tr>${c.votos_congresso.map(v=>`<tr><td>${esc(v.numero)}/${v.ano}</td><td title="${esc(v.ementa)}">${esc(v.ementa.length>70?v.ementa.slice(0,70)+"…":v.ementa)}</td><td><strong>${esc(v.voto)}</strong></td><td>${dt(v.data_votacao)}</td></tr>`).join("")}</table>`:`<p class="mut">Nenhuma votação de mérito de PEC registrada para este deputado até agora.</p>`}`:"";
   app.innerHTML=`<div class="back"><a href="#" id="v">← Voltar à lista</a></div>
   <div class="card"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br>
   <span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"—")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"—")}</span>
   ${c.coligacao?`<p class="mut">Coligação: ${esc(c.coligacao)}</p>`:""}
   <p class="mut">Fonte: TSE · consultado em ${dt(c.data_consulta)} · ${c.validado_por?`conferido manualmente em ${dt(c.validado_em)}`:"ainda não conferido manualmente"}</p></div>
-  ${hom}<h3>Candidaturas anteriores</h3>${ant}<h3>Patrimônio declarado</h3>${pat}${bens}${motivo}<h3>Processos e condenações</h3>${proc}
-  <h3>Não coletado nesta versão</h3><p class="mut">Doadores de campanha, contas rejeitadas, projetos, votos, presença, cota parlamentar e emendas.</p>`;
+  ${hom}<h3>Candidaturas anteriores</h3>${ant}<h3>Patrimônio declarado</h3>${pat}${bens}${motivo}${congresso}<h3>Processos e condenações</h3>${proc}
+  <h3>Não coletado nesta versão</h3><p class="mut">Doadores de campanha, contas rejeitadas, projetos de lei comuns (só PECs por enquanto), presença, cota parlamentar e emendas.</p>`;
   $("#v").onclick=e=>{e.preventDefault();lista()};window.scrollTo(0,0);
 }
 </script>
