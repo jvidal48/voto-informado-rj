@@ -4,92 +4,241 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Voto Informado RJ 2026</title>
+<meta name="description" content="Histórico oficial de candidatos ao Rio de Janeiro nas eleições de 2026, a partir de dados abertos do TSE e da Câmara dos Deputados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,600&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f7f7f5;--fg:#1c1c1c;--mut:#5f5f5f;--card:#fff;--bd:#dcdcd6;--ac:#1b4f8a;--ac-bg:#e8f0fa;--warn:#fff4d6;--wbd:#e0b84a;--att:#fbeee0;--attbd:#d98a3d}
-@media(prefers-color-scheme:dark){:root{--bg:#141414;--fg:#ececec;--mut:#a0a0a0;--card:#1e1e1e;--bd:#333;--ac:#7db3f0;--ac-bg:#1c2c3d;--warn:#3a3116;--wbd:#8a7020;--att:#3a2a18;--attbd:#8a5a20}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
-main{max-width:780px;margin:0 auto;padding:16px}
-h1{font-size:1.4rem;margin:.2rem 0}h2{font-size:1.15rem;margin:.2rem 0}h3{font-size:1rem;margin:1.1rem 0 .4rem}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0;transition:border-color .15s}
-.card:has(button.cand:hover){border-color:var(--ac)}
-.warn{background:var(--warn);border:1px solid var(--wbd);border-radius:8px;padding:10px;margin:10px 0;font-size:.92rem}
-.mut{color:var(--mut);font-size:.88rem}a{color:var(--ac)}
-input{width:100%;padding:11px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--fg);margin-bottom:10px}
-button.cand{all:unset;display:block;width:100%;cursor:pointer}button.cand:focus-visible{outline:2px solid var(--ac)}
-table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border-bottom:1px solid var(--bd);padding:6px 4px;text-align:left}
-.tag{display:inline-block;border:1px solid var(--bd);border-radius:99px;padding:1px 9px;font-size:.8rem;margin:2px 4px 2px 0}
-.tag.situ{border-color:var(--ac);color:var(--ac)}
-.tag.situ.att{border-color:var(--attbd);color:var(--attbd);background:var(--att)}
-.back{margin:8px 0}
-.tabs{display:flex;gap:6px;overflow-x:auto;margin:12px 0;padding-bottom:2px;-webkit-overflow-scrolling:touch}
-.tabs button{all:unset;cursor:pointer;white-space:nowrap;padding:7px 14px;border-radius:99px;font-size:.9rem;border:1px solid var(--bd);color:var(--mut)}
-.tabs button.on{background:var(--ac-bg);border-color:var(--ac);color:var(--ac);font-weight:600}
-.count{color:var(--mut);font-size:.85rem;margin:0 0 8px}
+:root{
+  --bg:#faf6ee; --surface:#ffffff; --surface-2:#f2ead9; --surface-3:#ece2cc;
+  --fg:#1c1712; --fg-mut:#6e6255; --fg-faint:#a89d8c;
+  --border:#e6dcc7; --border-strong:#d8ccb2;
+  --accent:#9a5b13; --accent-ink:#7a4710; --accent-tint:#f5e6cd; --accent-tint-strong:#ecd6a9;
+  --attn:#a8371f; --attn-tint:#fbe6df; --attn-border:#e3a488;
+  --ok-ink:#3f6b3a;
+  --shadow:0 1px 2px rgba(30,20,5,.04), 0 8px 24px -12px rgba(30,20,5,.18);
+  --shadow-lg:0 20px 60px -20px rgba(30,20,5,.35);
+  --radius:14px;
+}
+@media(prefers-color-scheme:dark){:root{
+  --bg:#15120e; --surface:#1e1a15; --surface-2:#262019; --surface-3:#2f271d;
+  --fg:#f1e9db; --fg-mut:#b3a690; --fg-faint:#786c5a;
+  --border:#332b1f; --border-strong:#453a29;
+  --accent:#e3ac4e; --accent-ink:#f2c877; --accent-tint:#332916; --accent-tint-strong:#453419;
+  --attn:#e8846a; --attn-tint:#3a231c; --attn-border:#6b4030;
+  --ok-ink:#8fc086;
+  --shadow:0 1px 2px rgba(0,0,0,.3), 0 8px 24px -12px rgba(0,0,0,.5);
+  --shadow-lg:0 20px 60px -20px rgba(0,0,0,.7);
+}}
+*{box-sizing:border-box}
+::selection{background:var(--accent-tint-strong);color:var(--accent-ink)}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.5;
+  background-image:radial-gradient(circle at 1px 1px, var(--border) 1px, transparent 0);background-size:22px 22px;
+  -webkit-mask-image:linear-gradient(to bottom, black, transparent 480px);mask-image:linear-gradient(to bottom, black, transparent 480px)}
+main{max-width:760px;margin:0 auto;padding:0 18px 64px;position:relative;z-index:1}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:600;letter-spacing:-.01em}
+h3{font-size:1.02rem;margin:1.8rem 0 .7rem;color:var(--fg);display:flex;align-items:center;gap:.5rem}
+h3::before{content:"";width:18px;height:2px;background:var(--accent);border-radius:2px;flex:none}
+a{color:var(--accent-ink);text-decoration-color:var(--border-strong);text-underline-offset:2px}
+a:hover{text-decoration-color:currentColor}
+.mut{color:var(--fg-mut);font-size:.88rem}
+.faint{color:var(--fg-faint);font-size:.8rem}
+
+/* header */
+header.top{padding:26px 0 18px;position:relative}
+.brand{display:flex;align-items:center;gap:10px}
+.brand svg{flex:none;color:var(--accent)}
+.brand-name{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:1.55rem;letter-spacing:-.01em;line-height:1.1}
+.brand-name em{font-style:italic;font-weight:600;color:var(--accent-ink)}
+.brand-sub{margin:.35rem 0 0;color:var(--fg-mut);font-size:.86rem}
+#meta{margin:.5rem 0 0;font-size:.82rem;color:var(--fg-faint);font-family:"IBM Plex Mono",monospace}
+
+.notice{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:10px;padding:13px 15px;margin:18px 0;font-size:.89rem;line-height:1.5;box-shadow:var(--shadow)}
+.notice b{color:var(--fg)}
+.notice.attn{border-left-color:var(--attn);background:var(--attn-tint)}
+
+/* tabs */
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:20px 0 4px;padding:2px 2px 10px;-webkit-overflow-scrolling:touch;scrollbar-width:thin}
+.tabs::-webkit-scrollbar{height:4px}
+.tabs::-webkit-scrollbar-thumb{background:var(--border-strong);border-radius:4px}
+.tabs button{all:unset;cursor:pointer;white-space:nowrap;padding:8px 15px;border-radius:99px;font-size:.87rem;font-weight:500;border:1px solid var(--border);color:var(--fg-mut);background:var(--surface);transition:.12s}
+.tabs button:hover{border-color:var(--border-strong);color:var(--fg)}
+.tabs button.on{background:var(--fg);border-color:var(--fg);color:var(--bg);font-weight:600}
+@media(prefers-color-scheme:dark){.tabs button.on{background:var(--accent);border-color:var(--accent);color:#1a1305}}
+.tabs button .n{opacity:.62;font-variant-numeric:tabular-nums;margin-left:2px}
+
+/* search */
+.searchwrap{position:sticky;top:10px;z-index:5;margin:14px 0 6px}
+.searchbox{position:relative}
+.searchbox svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--fg-faint);pointer-events:none}
+input#q{width:100%;padding:13px 14px 13px 42px;font:500 .97rem "IBM Plex Sans",sans-serif;border:1.5px solid var(--border-strong);border-radius:12px;background:var(--surface);color:var(--fg);box-shadow:var(--shadow);transition:.12s}
+input#q:focus{outline:none;border-color:var(--accent);box-shadow:0 0 0 4px var(--accent-tint)}
+input#q::placeholder{color:var(--fg-faint);font-weight:400}
+.count{color:var(--fg-mut);font-size:.82rem;margin:9px 2px 4px;font-family:"IBM Plex Mono",monospace}
+
+/* candidate list cards */
+.grid{display:flex;flex-direction:column;gap:8px;margin-top:6px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+button.cand{all:unset;display:flex;align-items:center;gap:13px;width:100%;cursor:pointer;padding:13px 15px;border-radius:var(--radius)}
+button.cand:hover{background:var(--surface-2)}
+button.cand:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.avatar{flex:none;width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-family:"Fraunces",serif;font-weight:600;font-size:1.05rem;background:var(--accent-tint);color:var(--accent-ink)}
+.cbody{min-width:0;flex:1;text-align:left}
+.cbody h2{font-size:1.05rem;margin:0;line-height:1.25}
+.cbody .full{color:var(--fg-mut);font-size:.83rem;display:block;margin:1px 0 6px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+mark{background:var(--accent-tint-strong);color:var(--accent-ink);border-radius:3px;padding:0 2px}
+.chev{flex:none;color:var(--fg-faint)}
+
+/* tags/pills */
+.tag{display:inline-flex;align-items:center;gap:4px;border:1px solid var(--border);border-radius:99px;padding:2px 9px;font-size:.76rem;font-weight:500;margin:2px 5px 2px 0;color:var(--fg-mut);background:var(--surface-2)}
+.tag.num{font-family:"IBM Plex Mono",monospace;color:var(--fg)}
+.tag.situ{border-color:var(--border-strong);color:var(--ok-ink)}
+.tag.situ.att{border-color:var(--attn-border);color:var(--attn);background:var(--attn-tint)}
+
+/* ficha */
+.back{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;color:var(--fg-mut);font-size:.88rem;font-weight:500;padding:6px 2px;margin-bottom:4px}
+.back:hover{color:var(--accent-ink)}
+.hero{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:20px;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:linear-gradient(90deg,var(--accent),transparent)}
+.hero h2{font-size:1.5rem;margin:0}
+.hero .full{color:var(--fg-mut);font-size:.92rem;margin:2px 0 12px}
+.hero .taglist{margin-bottom:2px}
+.hero .coliga{margin:10px 0 0;font-size:.86rem;color:var(--fg-mut)}
+.hero .fonte{margin:12px 0 0;padding-top:12px;border-top:1px dashed var(--border);font-size:.8rem;color:var(--fg-faint)}
+
+.tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface);box-shadow:var(--shadow)}
+table{border-collapse:collapse;width:100%;font-size:.87rem}
+th{text-align:left;font-family:"IBM Plex Mono",monospace;font-size:.7rem;text-transform:uppercase;letter-spacing:.05em;color:var(--fg-faint);font-weight:500;padding:10px 12px;border-bottom:1px solid var(--border);background:var(--surface-2);white-space:nowrap}
+td{padding:10px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.num{font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums;white-space:nowrap}
+
+details{background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow);margin-top:10px;overflow:hidden}
+details table{margin:0}
+summary{cursor:pointer;padding:12px 14px;font-size:.88rem;font-weight:500;list-style:none;display:flex;align-items:center;gap:8px}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"▸";color:var(--accent);transition:.15s}
+details[open] summary::before{transform:rotate(90deg)}
+details[open] summary{border-bottom:1px solid var(--border)}
+
+.voto{font-weight:700;font-size:.8rem;padding:2px 9px;border-radius:99px;white-space:nowrap;display:inline-block}
+.voto.v-sim{background:var(--accent-tint);color:var(--accent-ink)}
+.voto.v-nao{background:var(--attn-tint);color:var(--attn)}
+.voto.v-outro{background:var(--surface-2);color:var(--fg-mut)}
+
+.proc-card{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:13px 15px;margin:8px 0;box-shadow:var(--shadow)}
+.empty{color:var(--fg-mut);font-size:.9rem;padding:14px 0}
+
+footer.site{margin-top:44px;padding-top:18px;border-top:1px solid var(--border);font-size:.8rem;color:var(--fg-faint)}
 </style>
 </head>
 <body><main>
-<h1>Voto Informado RJ 2026</h1>
-<p class="mut" id="sub"></p>
-<div class="warn"><strong>Aviso:</strong> este site apenas reúne dados públicos oficiais e não recomenda candidatos. Um processo em andamento <strong>não</strong> é condenação. Confira sempre na fonte indicada.</div>
+<header class="top">
+  <div class="brand">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 20h16M6 20V10l6-5 6 5v10M10 20v-6h4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 9.5l2 2 3.5-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div><div class="brand-name">Voto <em>Informado</em> RJ</div></div>
+  </div>
+  <p class="brand-sub">Histórico oficial de candidatos do Rio de Janeiro — eleições 2026, com dados do TSE e da Câmara dos Deputados.</p>
+  <p id="meta"></p>
+</header>
+
+<div class="notice"><b>Aviso:</b> este site apenas reúne dados públicos oficiais e não recomenda candidatos. Um processo em andamento <b>não</b> é condenação. Confira sempre na fonte indicada.</div>
+
 <div id="tabs" class="tabs"></div>
 <div id="app"></div>
-<p class="mut">Fontes: <a href="https://dadosabertos.tse.jus.br">Portal de Dados Abertos do TSE</a>. Valores de patrimônio são nominais (sem correção pela inflação).</p>
+
+<footer class="site">
+  Fontes: <a href="https://dadosabertos.tse.jus.br">Portal de Dados Abertos do TSE</a> ·
+  <a href="https://dadosabertos.camara.leg.br">Dados Abertos da Câmara dos Deputados</a>.
+  Valores de patrimônio são nominais (sem correção pela inflação). Código aberto em
+  <a href="https://github.com/jvidal48/voto-informado-rj">github.com/jvidal48/voto-informado-rj</a>.
+</footer>
 </main>
 <script>
 const $=s=>document.querySelector(s), app=$("#app");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const norm=s=>String(s??"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase();
 const brl=v=>v==null?"não encontrado":Number(v).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
 const dt=s=>s?new Date(s).toLocaleDateString("pt-BR"):"data não informada";
 const STATUS={em_andamento:"Processo em andamento (sem decisão final)",condenacao_1a_instancia:"Condenação em 1ª instância (cabe recurso)",condenacao_colegiada:"Condenação por órgão colegiado (ainda pode haver recurso)",transitado_em_julgado_condenacao:"Condenação transitada em julgado (sem mais recursos)",absolvicao:"Absolvição",arquivamento:"Arquivado",extincao_punibilidade:"Extinção da punibilidade",status_desconhecido:"Status não identificado"};
 const ORDEM_CARGOS=["PRES","GOV","SEN","DEP_FED","DEP_EST"];
 const atencaoSituacao=s=>/INDEFER|CASSAD|RENUNCI|INAPTO/i.test(s||"");
+const situTag=s=>s?`<span class="tag situ${atencaoSituacao(s)?" att":""}">${esc(s)}</span>`:`<span class="tag">situação não informada</span>`;
 const LIMIAR_BUSCA=60; // cargos com mais candidatos que isso exigem digitar algo antes de listar
+const ICON_SEARCH='<svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.8"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>';
+const ICON_CHEV='<svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const ICON_BACK='<svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 let D, cargoAtual, debounce;
+
+function highlight(text, q){
+  const t=String(text??"");
+  if(!q) return esc(t);
+  const nt=norm(t), nq=norm(q), i=nt.indexOf(nq);
+  if(i<0) return esc(t);
+  return esc(t.slice(0,i))+"<mark>"+esc(t.slice(i,i+nq.length))+"</mark>"+esc(t.slice(i+nq.length));
+}
 
 fetch("data.json").then(r=>r.json()).then(d=>{
   D=d;
+  $("#meta").textContent=`Dados gerados em ${dt(D.gerado_em)}`;
   const codigos=ORDEM_CARGOS.filter(c=>D.cargos[c]).concat(Object.keys(D.cargos).filter(c=>!ORDEM_CARGOS.includes(c)));
   cargoAtual=codigos.includes("GOV")?"GOV":codigos[0];
-  $("#tabs").innerHTML=codigos.map(c=>`<button data-c="${c}" class="${c===cargoAtual?"on":""}">${esc(D.cargos[c].nome)} <span class="mut">(${D.cargos[c].candidatos.length})</span></button>`).join("");
+  $("#tabs").innerHTML=codigos.map(c=>`<button data-c="${c}" class="${c===cargoAtual?"on":""}">${esc(D.cargos[c].nome)}<span class="n">${D.cargos[c].candidatos.length}</span></button>`).join("");
   $("#tabs").onclick=e=>{const b=e.target.closest("button[data-c]");if(!b)return;cargoAtual=b.dataset.c;[...$("#tabs").children].forEach(x=>x.classList.toggle("on",x===b));lista()};
   lista();
-}).catch(()=>{app.innerHTML='<div class="warn">Não foi possível carregar os dados (data.json).</div>'});
+}).catch(()=>{app.innerHTML='<div class="notice attn"><b>Não foi possível carregar os dados</b> (data.json). Tente recarregar a página.</div>'});
 
 function lista(){
   const cargo=D.cargos[cargoAtual];
   const grande=cargo.candidatos.length>LIMIAR_BUSCA;
-  $("#sub").textContent=`Dados gerados em ${dt(D.gerado_em)} · ${cargo.candidatos.length} candidato(s) a ${cargo.nome.toLowerCase()}`;
-  app.innerHTML=`<input id="q" placeholder="${grande?`Digite para buscar entre ${cargo.candidatos.length} candidatos (nome, número ou partido)`:"Buscar por nome, número ou partido"}" aria-label="Buscar candidato"><p class="count" id="cnt"></p><div id="l"></div>`;
-  const render=()=>{const t=$("#q").value.trim().toLowerCase();
-    if(grande&&!t){$("#cnt").textContent="";$("#l").innerHTML=`<p class="mut">Digite ao menos uma letra para buscar entre os ${cargo.candidatos.length} candidatos.</p>`;return}
-    const filtrados=cargo.candidatos.filter(c=>(c.nome_completo+" "+(c.nome_urna||"")+" "+c.numero+" "+(c.partido||"")).toLowerCase().includes(t));
-    $("#cnt").textContent=t?`${filtrados.length} resultado(s)`:"";
+  app.innerHTML=`<div class="searchwrap"><div class="searchbox">${ICON_SEARCH}<input id="q" placeholder="${grande?`Buscar entre ${cargo.candidatos.length} candidatos — nome, número ou partido`:"Buscar por nome, número ou partido"}" aria-label="Buscar candidato" autocomplete="off"></div></div><p class="count" id="cnt"></p><div class="grid" id="l"></div>`;
+  const render=()=>{const t=$("#q").value.trim();
+    if(grande&&!t){$("#cnt").textContent="";$("#l").innerHTML=`<p class="empty">Digite ao menos uma letra para buscar entre os ${cargo.candidatos.length} candidatos a ${cargo.nome.toLowerCase()}.</p>`;return}
+    const nt=norm(t);
+    const filtrados=cargo.candidatos.filter(c=>norm(c.nome_completo+" "+(c.nome_urna||"")+" "+c.numero+" "+(c.partido||"")).includes(nt));
+    $("#cnt").textContent=t?`${filtrados.length} resultado${filtrados.length===1?"":"s"}`:`${cargo.candidatos.length} candidato${cargo.candidatos.length===1?"":"s"} a ${cargo.nome.toLowerCase()}`;
     $("#l").innerHTML=filtrados.slice(0,200).map(c=>{const i=cargo.candidatos.indexOf(c);
-      return `<div class="card"><button class="cand" data-i="${i}"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br><span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"partido não informado")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"situação não informada")}</span></button></div>`}).join("")||'<p class="mut">Nenhum candidato encontrado.</p>';
-    if(filtrados.length>200)$("#l").insertAdjacentHTML("beforeend",`<p class="mut">Mostrando os 200 primeiros de ${filtrados.length}. Refine a busca para ver os demais.</p>`)};
+      const inicial=(c.nome_urna||c.nome_completo||"?").trim()[0]||"?";
+      return `<div class="card"><button class="cand" data-i="${i}">
+        <div class="avatar">${esc(inicial)}</div>
+        <div class="cbody"><h2>${highlight(c.nome_urna||c.nome_completo,t)}</h2><span class="full">${highlight(c.nome_completo,t)}</span>
+        <span class="tag num">nº ${esc(c.numero)}</span><span class="tag">${highlight(c.partido||"partido não informado",t)}</span>${situTag(c.situacao)}</div>
+        <span class="chev">${ICON_CHEV}</span>
+        </button></div>`}).join("")||'<p class="empty">Nenhum candidato encontrado para essa busca.</p>';
+    if(filtrados.length>200)$("#l").insertAdjacentHTML("beforeend",`<p class="empty">Mostrando os 200 primeiros de ${filtrados.length}. Refine a busca para ver os demais.</p>`)};
   $("#q").oninput=()=>{clearTimeout(debounce);debounce=setTimeout(render,grande?150:0)};render();
   $("#l").onclick=e=>{const b=e.target.closest("button.cand");if(b)ficha(+b.dataset.i)};
+  if(!grande) $("#q").focus({preventScroll:true});
+}
+
+function votoClasse(v){
+  const s=(v||"").toLowerCase();
+  if(s.startsWith("sim")) return "v-sim";
+  if(s.startsWith("não")||s.startsWith("nao")) return "v-nao";
+  return "v-outro";
 }
 
 function ficha(i){
   const c=D.cargos[cargoAtual].candidatos[i];
-  const ant=c.candidaturas_anteriores.length?`<table><tr><th>Ano</th><th>Cargo</th><th>Partido</th><th>Resultado</th></tr>${c.candidaturas_anteriores.map(x=>`<tr><td>${x.ano}</td><td>${esc(x.cargo)}</td><td>${esc(x.partido||"—")}</td><td>${esc(x.resultado||"não informado")}</td></tr>`).join("")}</table>`:`<p>Não encontrado nas bases consultadas. <span class="mut">Verifique em <a href="https://divulgacandcontas.tse.jus.br">DivulgaCandContas</a>.</span></p>`;
-  const pat=c.patrimonio.length?`<table><tr><th>Eleição</th><th>Total declarado (nominal)</th><th>Itens</th></tr>${c.patrimonio.map(p=>`<tr><td>${p.ano}</td><td>${p.status_coleta==="nao_encontrado"?"não encontrado":brl(p.total_nominal)}</td><td>${p.status_coleta!=="nao_encontrado"&&!p.n_bens&&p.total_nominal===0?"declarou não possuir bens":(p.n_bens||0)}</td></tr>`).join("")}</table>`:`<p>Não encontrado.</p>`;
-  const bens=c.bens.length?`<details><summary>Ver bens declarados em ${D.ano} (${c.bens.length})</summary><table>${c.bens.map(b=>`<tr><td>${esc(b.tipo_bem||"")}</td><td>${esc(b.descricao||"")}</td><td>${brl(b.valor_reais)}</td></tr>`).join("")}</table></details>`:"";
-  const proc=c.processos.length?c.processos.map(p=>`<div class="card"><strong>${esc(STATUS[p.status_atual]||p.status_atual)}</strong><br>Nº ${esc(p.numero_cnj||"não informado")} · ${esc(p.tribunal||"")}<br>${esc(p.resultado_descricao||"")}<br><span class="mut">Consultado em ${dt(p.data_consulta)}</span></div>`).join(""):`<p><strong>Não coletado nesta versão.</strong> A ausência de processos aqui <u>não significa</u> que não existam. Verifique a certidão criminal do candidato no <a href="https://divulgacandcontas.tse.jus.br">DivulgaCandContas</a> e nos sites dos tribunais.</p>`;
-  const hom=c.vinculo_confianca==="nao_confirmado"?`<div class="warn">Atenção a homônimos: o histórico de eleições anteriores foi ligado por nome e data de nascimento, sem confirmação por CPF. Confira antes de tirar conclusões.</div>`:"";
-  const motivo=c.motivo_indeferimento.length?`<h3>Motivo de indeferimento/cassação do registro</h3><div class="warn"><strong>Atenção:</strong> isto é sobre o <u>registro da candidatura</u> perante a Justiça Eleitoral — <u>não é</u> histórico criminal nem condenação da pessoa.</div>${c.motivo_indeferimento.map(m=>`<div class="card">${esc(m.tipo_motivo)}: <strong>${esc(m.motivo)}</strong>${m.nr_processo&&m.nr_processo!=="-1"?`<br><span class="mut">Processo nº ${esc(m.nr_processo)}</span>`:""}</div>`).join("")}`:"";
-  const congresso=c.parlamentar?`<h3>Como votou no Congresso (Câmara dos Deputados)</h3>
+  const ant=c.candidaturas_anteriores.length?`<div class="tablewrap"><table><tr><th>Ano</th><th>Cargo</th><th>Partido</th><th>Resultado</th></tr>${c.candidaturas_anteriores.map(x=>`<tr><td class="num">${x.ano}</td><td>${esc(x.cargo)}</td><td>${esc(x.partido||"—")}</td><td>${esc(x.resultado||"não informado")}</td></tr>`).join("")}</table></div>`:`<p class="empty">Não encontrado nas bases consultadas. <a href="https://divulgacandcontas.tse.jus.br">Verifique em DivulgaCandContas</a>.</p>`;
+  const pat=c.patrimonio.length?`<div class="tablewrap"><table><tr><th>Eleição</th><th>Total declarado (nominal)</th><th>Itens</th></tr>${c.patrimonio.map(p=>`<tr><td class="num">${p.ano}</td><td class="num">${p.status_coleta==="nao_encontrado"?"não encontrado":brl(p.total_nominal)}</td><td class="num">${p.status_coleta!=="nao_encontrado"&&!p.n_bens&&p.total_nominal===0?"declarou não possuir bens":(p.n_bens||0)}</td></tr>`).join("")}</table></div>`:`<p class="empty">Não encontrado.</p>`;
+  const bens=c.bens.length?`<details><summary>Ver bens declarados em ${D.ano} (${c.bens.length})</summary><table>${c.bens.map(b=>`<tr><td>${esc(b.tipo_bem||"")}</td><td>${esc(b.descricao||"")}</td><td class="num">${brl(b.valor_reais)}</td></tr>`).join("")}</table></details>`:"";
+  const proc=c.processos.length?c.processos.map(p=>`<div class="proc-card"><strong>${esc(STATUS[p.status_atual]||p.status_atual)}</strong><br>Nº ${esc(p.numero_cnj||"não informado")} · ${esc(p.tribunal||"")}<br>${esc(p.resultado_descricao||"")}<br><span class="faint">Consultado em ${dt(p.data_consulta)}</span></div>`).join(""):`<p class="empty"><strong>Não coletado nesta versão.</strong> A ausência de processos aqui <u>não significa</u> que não existam. Verifique a certidão criminal do candidato no <a href="https://divulgacandcontas.tse.jus.br">DivulgaCandContas</a> e nos sites dos tribunais.</p>`;
+  const hom=c.vinculo_confianca==="nao_confirmado"?`<div class="notice attn"><b>Atenção a homônimos:</b> o histórico de eleições anteriores foi ligado por nome e data de nascimento, sem confirmação por CPF. Confira antes de tirar conclusões.</div>`:"";
+  const motivo=c.motivo_indeferimento.length?`<h3>Motivo de indeferimento/cassação do registro</h3><div class="notice attn"><b>Atenção:</b> isto é sobre o <u>registro da candidatura</u> perante a Justiça Eleitoral — <u>não é</u> histórico criminal nem condenação da pessoa.</div>${c.motivo_indeferimento.map(m=>`<div class="proc-card">${esc(m.tipo_motivo)}: <strong>${esc(m.motivo)}</strong>${m.nr_processo&&m.nr_processo!=="-1"?`<br><span class="faint">Processo nº ${esc(m.nr_processo)}</span>`:""}</div>`).join("")}`:"";
+  const congresso=c.parlamentar?`<h3>Como votou no Congresso</h3>
     <p class="mut">É (ou foi) deputado federal (<a href="${esc(c.parlamentar.url_origem)}">perfil oficial na Câmara</a>). Mostra o voto em <strong>todas</strong> as PECs que tiveram votação de mérito em Plenário nesta legislatura — critério mecânico (toda PEC votada entra), sem escolha temática.</p>
-    ${c.votos_congresso.length?`<table><tr><th>PEC</th><th title="${esc(c.votos_congresso.map(v=>v.ementa).join(' | '))}">Ementa</th><th>Voto</th><th>Data</th></tr>${c.votos_congresso.map(v=>`<tr><td>${esc(v.numero)}/${v.ano}</td><td title="${esc(v.ementa)}">${esc(v.ementa.length>70?v.ementa.slice(0,70)+"…":v.ementa)}</td><td><strong>${esc(v.voto)}</strong></td><td>${dt(v.data_votacao)}</td></tr>`).join("")}</table>`:`<p class="mut">Nenhuma votação de mérito de PEC registrada para este deputado até agora.</p>`}`:"";
-  app.innerHTML=`<div class="back"><a href="#" id="v">← Voltar à lista</a></div>
-  <div class="card"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br>
-  <span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"—")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"—")}</span>
-  ${c.coligacao?`<p class="mut">Coligação: ${esc(c.coligacao)}</p>`:""}
-  <p class="mut">Fonte: TSE · consultado em ${dt(c.data_consulta)} · ${c.validado_por?`conferido manualmente em ${dt(c.validado_em)}`:"ainda não conferido manualmente"}</p></div>
+    ${c.votos_congresso.length?`<div class="tablewrap"><table><tr><th>PEC</th><th>Ementa</th><th>Voto</th><th>Data</th></tr>${c.votos_congresso.map(v=>`<tr><td class="num">${esc(v.numero)}/${v.ano}</td><td title="${esc(v.ementa)}">${esc(v.ementa.length>62?v.ementa.slice(0,62)+"…":v.ementa)}</td><td><span class="voto ${votoClasse(v.voto)}">${esc(v.voto)}</span></td><td class="num">${dt(v.data_votacao)}</td></tr>`).join("")}</table></div>`:`<p class="empty">Nenhuma votação de mérito de PEC registrada para este deputado até agora.</p>`}`:"";
+  app.innerHTML=`<button class="back" id="v">${ICON_BACK} Voltar à lista</button>
+  <div class="hero"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="full">${esc(c.nome_completo)}</span>
+  <div class="taglist"><span class="tag num">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"—")}</span>${situTag(c.situacao)}</div>
+  ${c.coligacao?`<p class="coliga">Coligação: ${esc(c.coligacao)}</p>`:""}
+  <p class="fonte">Fonte: TSE · consultado em ${dt(c.data_consulta)} · ${c.validado_por?`conferido manualmente em ${dt(c.validado_em)}`:"ainda não conferido manualmente"}</p></div>
   ${hom}<h3>Candidaturas anteriores</h3>${ant}<h3>Patrimônio declarado</h3>${pat}${bens}${motivo}${congresso}<h3>Processos e condenações</h3>${proc}
   <h3>Não coletado nesta versão</h3><p class="mut">Doadores de campanha, contas rejeitadas, projetos de lei comuns (só PECs por enquanto), presença, cota parlamentar e emendas.</p>`;
-  $("#v").onclick=e=>{e.preventDefault();lista()};window.scrollTo(0,0);
+  $("#v").onclick=()=>lista();window.scrollTo(0,0);
 }
 </script>
 </body></html>

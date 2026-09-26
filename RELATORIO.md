@@ -175,6 +175,27 @@ a bater exatamente com os da seção 3c/4 deste relatório (nenhum dado de
 2018/2022 foi afetado, só 2026 tinha sido reexecutado). `data.json` e o teste
 local do site (seção 5) foram refeitos depois da correção.
 
+## 5h. Redesign visual (a pedido do usuário: "mais moderno, profissional, fácil de pesquisar")
+
+Reescrito `index.html` do zero com direção visual editorial/institucional
+(peso de portal de transparência + cobertura jornalística de eleição):
+
+- Tipografia: "Fraunces" (serifada, títulos/nomes) + "IBM Plex Sans" (corpo/
+  dados) + "IBM Plex Mono" (números, datas, metadados) — via Google Fonts,
+  evitando fontes genéricas.
+- Paleta em dourado/âmbar sobre base quase-preta (dark) ou papel bege claro
+  (light) — segue `prefers-color-scheme`, sem depender de toggle manual.
+  Verde suave só para "situação em ordem", âmbar/terracota só para atenção
+  (indeferido/cassado) e para os avisos — nunca vermelho/verde fortes, pra
+  não parecer veredito de valor.
+- Busca: agora ignora acentos (buscar "joao" acha "João"), destaca o trecho
+  encontrado em negrito/dourado, foca automaticamente o campo ao abrir uma
+  lista pequena, e mostra contagem de resultados em tempo real.
+- Corrigido um detalhe encontrado durante o teste: "situação não
+  informada" estava com a mesma cor verde de "Deferido" (dava a entender
+  errado que estava tudo certo) — agora neutro em cinza.
+- Testado em claro, escuro e mobile (375px) antes de publicar.
+
 ## 6. Conferir manualmente (lista)
 
 1. ~~Situação vazia em 2026~~ — resolvido na seção 5b.
