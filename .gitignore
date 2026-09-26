@@ -1,0 +1,9 @@
+zips/
+voto.db
+.claude/
+.claude-flow/
+__pycache__/
+*.pyc
+index_1.html
+checklist_validacao.md
+*.tmp
