@@ -24,7 +24,7 @@ CREATE TABLE cargo (
     nome    TEXT NOT NULL
 );
 INSERT INTO cargo (codigo, nome) VALUES
-    ('PRES',    'Presidente da Republica'),
+    ('PRES',    'Presidente da República'),
     ('GOV',     'Governador'),
     ('SEN',     'Senador'),
     ('DEP_FED', 'Deputado Federal'),

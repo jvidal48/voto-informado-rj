@@ -189,6 +189,42 @@ local do site (seção 5) foram refeitos depois da correção.
    resultado da eleição (eleito/não eleito), que só existe depois do pleito
    ocorrer em outubro. Nada a fazer antes disso.
 
+## 5d. Expansão para Senador e Presidente (pós-publicação)
+
+A pedido do usuário, expandido além do piloto (só Governador). Reaproveitado
+o mesmo zip nacional já baixado (`consulta_cand_2026.zip` já trazia os CSVs
+de todas as UFs e o nacional `_BRASIL.csv`), sem precisar de novo download:
+
+```
+python coleta_tse.py --cargo SEN --uf RJ --anos 2026 --zip-dir zips
+python coleta_tse.py --cargo PRES --anos 2026 --zip-dir zips
+```
+
+| Cargo | Candidaturas | Bate com o site oficial (contagem RJ/BR)? |
+|---|---|---|
+| Senador (RJ) | 17 | Sim — DivulgaCandContas mostra "Senador: 17" para o RJ |
+| Presidente | 14 | Sim — home do DivulgaCandContas mostra "Presidente: 14" |
+
+`exportar_json.py` foi generalizado para `--cargos` (aceita vários) e o
+`data.json` agora tem a forma `{"cargos": {"GOV":{...}, "SEN":{...}, "PRES":{...}}}`.
+`index.html` ganhou abas para trocar de cargo, contagem de resultados na
+busca, e um destaque visual (âmbar) neutro para situações que pedem atenção
+(indeferido/cassado/renúncia) — sem usar vermelho/verde, para não parecer
+julgamento de valor.
+
+Também corrigido um typo (`Republica` sem acento) na tabela `cargo` do
+schema, no banco já existente e no seed do schema.sql.
+
+**Deputado Federal e Deputado Estadual (RJ) ficaram de fora por enquanto** —
+são ~2.000 candidatos juntos (793 + 1.188 no RJ), uma escala bem maior que
+exige repensar performance de exportação/renderização antes de simplesmente
+rodar o mesmo pipeline.
+
+**Processos judiciais**: investigação da fonte ainda pendente (a decisão foi
+não arriscar implementar sem confirmar uma fonte oficial em lote — o
+DivulgaCandContas mostra isso por candidato individual, não como arquivo
+aberto único encontrado até agora).
+
 ## 7. Erros durante o processo (registrados, não escondidos)
 
 - `HTTP 403 Forbidden` inicial em todo download via `cdn.tse.jus.br` (seção 1).

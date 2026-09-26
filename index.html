@@ -5,25 +5,33 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Voto Informado RJ 2026</title>
 <style>
-:root{--bg:#f7f7f5;--fg:#1c1c1c;--mut:#5f5f5f;--card:#fff;--bd:#dcdcd6;--ac:#1b4f8a;--warn:#fff4d6;--wbd:#e0b84a}
-@media(prefers-color-scheme:dark){:root{--bg:#141414;--fg:#ececec;--mut:#a0a0a0;--card:#1e1e1e;--bd:#333;--ac:#7db3f0;--warn:#3a3116;--wbd:#8a7020}}
+:root{--bg:#f7f7f5;--fg:#1c1c1c;--mut:#5f5f5f;--card:#fff;--bd:#dcdcd6;--ac:#1b4f8a;--ac-bg:#e8f0fa;--warn:#fff4d6;--wbd:#e0b84a;--att:#fbeee0;--attbd:#d98a3d}
+@media(prefers-color-scheme:dark){:root{--bg:#141414;--fg:#ececec;--mut:#a0a0a0;--card:#1e1e1e;--bd:#333;--ac:#7db3f0;--ac-bg:#1c2c3d;--warn:#3a3116;--wbd:#8a7020;--att:#3a2a18;--attbd:#8a5a20}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
-main{max-width:760px;margin:0 auto;padding:16px}
-h1{font-size:1.4rem;margin:.2rem 0}h2{font-size:1.15rem;margin:.2rem 0}h3{font-size:1rem;margin:1rem 0 .3rem}
-.card{background:var(--card);border:1px solid var(--bd);border-radius:10px;padding:14px;margin:12px 0}
+main{max-width:780px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:.2rem 0}h2{font-size:1.15rem;margin:.2rem 0}h3{font-size:1rem;margin:1.1rem 0 .4rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:10px 0;transition:border-color .15s}
+.card:has(button.cand:hover){border-color:var(--ac)}
 .warn{background:var(--warn);border:1px solid var(--wbd);border-radius:8px;padding:10px;margin:10px 0;font-size:.92rem}
 .mut{color:var(--mut);font-size:.88rem}a{color:var(--ac)}
-input{width:100%;padding:10px;font-size:1rem;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg)}
+input{width:100%;padding:11px;font-size:1rem;border:1px solid var(--bd);border-radius:10px;background:var(--card);color:var(--fg);margin-bottom:10px}
 button.cand{all:unset;display:block;width:100%;cursor:pointer}button.cand:focus-visible{outline:2px solid var(--ac)}
 table{border-collapse:collapse;width:100%;font-size:.92rem}td,th{border-bottom:1px solid var(--bd);padding:6px 4px;text-align:left}
-.tag{display:inline-block;border:1px solid var(--bd);border-radius:99px;padding:1px 8px;font-size:.8rem;margin-right:4px}
+.tag{display:inline-block;border:1px solid var(--bd);border-radius:99px;padding:1px 9px;font-size:.8rem;margin:2px 4px 2px 0}
+.tag.situ{border-color:var(--ac);color:var(--ac)}
+.tag.situ.att{border-color:var(--attbd);color:var(--attbd);background:var(--att)}
 .back{margin:8px 0}
+.tabs{display:flex;gap:6px;overflow-x:auto;margin:12px 0;padding-bottom:2px;-webkit-overflow-scrolling:touch}
+.tabs button{all:unset;cursor:pointer;white-space:nowrap;padding:7px 14px;border-radius:99px;font-size:.9rem;border:1px solid var(--bd);color:var(--mut)}
+.tabs button.on{background:var(--ac-bg);border-color:var(--ac);color:var(--ac);font-weight:600}
+.count{color:var(--mut);font-size:.85rem;margin:0 0 8px}
 </style>
 </head>
 <body><main>
 <h1>Voto Informado RJ 2026</h1>
 <p class="mut" id="sub"></p>
 <div class="warn"><strong>Aviso:</strong> este site apenas reúne dados públicos oficiais e não recomenda candidatos. Um processo em andamento <strong>não</strong> é condenação. Confira sempre na fonte indicada.</div>
+<div id="tabs" class="tabs"></div>
 <div id="app"></div>
 <p class="mut">Fontes: <a href="https://dadosabertos.tse.jus.br">Portal de Dados Abertos do TSE</a>. Valores de patrimônio são nominais (sem correção pela inflação).</p>
 </main>
@@ -33,18 +41,34 @@ const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&
 const brl=v=>v==null?"não encontrado":Number(v).toLocaleString("pt-BR",{style:"currency",currency:"BRL"});
 const dt=s=>s?new Date(s).toLocaleDateString("pt-BR"):"data não informada";
 const STATUS={em_andamento:"Processo em andamento (sem decisão final)",condenacao_1a_instancia:"Condenação em 1ª instância (cabe recurso)",condenacao_colegiada:"Condenação por órgão colegiado (ainda pode haver recurso)",transitado_em_julgado_condenacao:"Condenação transitada em julgado (sem mais recursos)",absolvicao:"Absolvição",arquivamento:"Arquivado",extincao_punibilidade:"Extinção da punibilidade",status_desconhecido:"Status não identificado"};
-let D;
-fetch("data.json").then(r=>r.json()).then(d=>{D=d;$("#sub").textContent=`Candidatos a governador do RJ · dados gerados em ${dt(d.gerado_em)}`;lista()}).catch(()=>{app.innerHTML='<div class="warn">Não foi possível carregar os dados (data.json).</div>'});
+const ORDEM_CARGOS=["PRES","GOV","SEN","DEP_FED","DEP_EST"];
+const atencaoSituacao=s=>/INDEFER|CASSAD|RENUNCI|INAPTO/i.test(s||"");
+let D, cargoAtual;
+
+fetch("data.json").then(r=>r.json()).then(d=>{
+  D=d;
+  const codigos=ORDEM_CARGOS.filter(c=>D.cargos[c]).concat(Object.keys(D.cargos).filter(c=>!ORDEM_CARGOS.includes(c)));
+  cargoAtual=codigos.includes("GOV")?"GOV":codigos[0];
+  $("#tabs").innerHTML=codigos.map(c=>`<button data-c="${c}" class="${c===cargoAtual?"on":""}">${esc(D.cargos[c].nome)} <span class="mut">(${D.cargos[c].candidatos.length})</span></button>`).join("");
+  $("#tabs").onclick=e=>{const b=e.target.closest("button[data-c]");if(!b)return;cargoAtual=b.dataset.c;[...$("#tabs").children].forEach(x=>x.classList.toggle("on",x===b));lista()};
+  lista();
+}).catch(()=>{app.innerHTML='<div class="warn">Não foi possível carregar os dados (data.json).</div>'});
+
 function lista(){
-  app.innerHTML=`<input id="q" placeholder="Buscar por nome ou número" aria-label="Buscar candidato"><div id="l"></div>`;
+  const cargo=D.cargos[cargoAtual];
+  $("#sub").textContent=`Dados gerados em ${dt(D.gerado_em)} · ${cargo.candidatos.length} candidato(s) a ${cargo.nome.toLowerCase()}`;
+  app.innerHTML=`<input id="q" placeholder="Buscar por nome, número ou partido" aria-label="Buscar candidato"><p class="count" id="cnt"></p><div id="l"></div>`;
   const render=()=>{const t=$("#q").value.toLowerCase();
-    $("#l").innerHTML=D.candidatos.filter(c=>(c.nome_completo+" "+(c.nome_urna||"")+" "+c.numero).toLowerCase().includes(t)).map(c=>{const i=D.candidatos.indexOf(c);
-      return `<div class="card"><button class="cand" data-i="${i}"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br><span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"partido não informado")}</span><span class="tag">${esc(c.situacao||"situação não informada")}</span></button></div>`}).join("")||'<p class="mut">Nenhum candidato encontrado.</p>'};
+    const filtrados=cargo.candidatos.filter(c=>(c.nome_completo+" "+(c.nome_urna||"")+" "+c.numero+" "+(c.partido||"")).toLowerCase().includes(t));
+    $("#cnt").textContent=t?`${filtrados.length} resultado(s)`:"";
+    $("#l").innerHTML=filtrados.map(c=>{const i=cargo.candidatos.indexOf(c);
+      return `<div class="card"><button class="cand" data-i="${i}"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br><span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"partido não informado")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"situação não informada")}</span></button></div>`}).join("")||'<p class="mut">Nenhum candidato encontrado.</p>'};
   $("#q").oninput=render;render();
   $("#l").onclick=e=>{const b=e.target.closest("button.cand");if(b)ficha(+b.dataset.i)};
 }
+
 function ficha(i){
-  const c=D.candidatos[i];
+  const c=D.cargos[cargoAtual].candidatos[i];
   const ant=c.candidaturas_anteriores.length?`<table><tr><th>Ano</th><th>Cargo</th><th>Partido</th><th>Resultado</th></tr>${c.candidaturas_anteriores.map(x=>`<tr><td>${x.ano}</td><td>${esc(x.cargo)}</td><td>${esc(x.partido||"—")}</td><td>${esc(x.resultado||"não informado")}</td></tr>`).join("")}</table>`:`<p>Não encontrado nas bases consultadas. <span class="mut">Verifique em <a href="https://divulgacandcontas.tse.jus.br">DivulgaCandContas</a>.</span></p>`;
   const pat=c.patrimonio.length?`<table><tr><th>Eleição</th><th>Total declarado (nominal)</th><th>Itens</th></tr>${c.patrimonio.map(p=>`<tr><td>${p.ano}</td><td>${p.status_coleta==="nao_encontrado"?"não encontrado":brl(p.total_nominal)}</td><td>${p.status_coleta!=="nao_encontrado"&&!p.n_bens&&p.total_nominal===0?"declarou não possuir bens":(p.n_bens||0)}</td></tr>`).join("")}</table>`:`<p>Não encontrado.</p>`;
   const bens=c.bens.length?`<details><summary>Ver bens declarados em ${D.ano} (${c.bens.length})</summary><table>${c.bens.map(b=>`<tr><td>${esc(b.tipo_bem||"")}</td><td>${esc(b.descricao||"")}</td><td>${brl(b.valor_reais)}</td></tr>`).join("")}</table></details>`:"";
@@ -52,7 +76,7 @@ function ficha(i){
   const hom=c.vinculo_confianca==="nao_confirmado"?`<div class="warn">Atenção a homônimos: o histórico de eleições anteriores foi ligado por nome e data de nascimento, sem confirmação por CPF. Confira antes de tirar conclusões.</div>`:"";
   app.innerHTML=`<div class="back"><a href="#" id="v">← Voltar à lista</a></div>
   <div class="card"><h2>${esc(c.nome_urna||c.nome_completo)}</h2><span class="mut">${esc(c.nome_completo)}</span><br>
-  <span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"—")}</span><span class="tag">${esc(c.situacao||"—")}</span>
+  <span class="tag">nº ${esc(c.numero)}</span><span class="tag">${esc(c.partido||"—")}</span><span class="tag situ${atencaoSituacao(c.situacao)?" att":""}">${esc(c.situacao||"—")}</span>
   ${c.coligacao?`<p class="mut">Coligação: ${esc(c.coligacao)}</p>`:""}
   <p class="mut">Fonte: TSE · consultado em ${dt(c.data_consulta)} · ${c.validado_por?`conferido manualmente em ${dt(c.validado_em)}`:"ainda não conferido manualmente"}</p></div>
   ${hom}<h3>Candidaturas anteriores</h3>${ant}<h3>Patrimônio declarado</h3>${pat}${bens}<h3>Processos e condenações</h3>${proc}

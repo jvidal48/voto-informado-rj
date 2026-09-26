@@ -1,554 +1,2883 @@
 {
- "gerado_em": "2026-09-26T01:40:13-03:00",
- "cargo": "GOV",
+ "gerado_em": "2026-09-26T02:18:24-03:00",
  "ano": 2026,
- "candidatos": [
-  {
-   "nome_completo": "ANDRÉ BOURGUIGNON MARINHO",
-   "nome_urna": "ANDRÉ MARINHO",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "30",
-   "partido": "NOVO",
-   "coligacao": "PARTIDO ISOLADO",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002537524",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [],
-   "patrimonio": [
+ "cargos": {
+  "GOV": {
+   "nome": "Governador",
+   "candidatos": [
     {
-     "ano": 2026,
-     "total_nominal": 407503.55,
-     "n_bens": 6,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
-    {
-     "tipo_bem": "Apartamento",
-     "descricao": "APARTAMENTO",
-     "valor_reais": 300000.0
+     "nome_completo": "ANDRÉ BOURGUIGNON MARINHO",
+     "nome_urna": "ANDRÉ MARINHO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "30",
+     "partido": "NOVO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002537524",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 407503.55,
+       "n_bens": 6,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO",
+       "valor_reais": 300000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS OU QUINHÕES DE CAPITAL",
+       "valor_reais": 100000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "CADERNETA DE POUPANÇA",
+       "valor_reais": 7487.18
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS)",
+       "valor_reais": 14.37
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "DEPÓSITO BANCÁRIO EM CONTA CORRENTE NO PAÍS",
+       "valor_reais": 1.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "DEPÓSITO BANCÁRIO EM CONTA CORRENTE NO PAÍS",
+       "valor_reais": 1.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "tipo_bem": "Quotas ou quinhões de capital",
-     "descricao": "QUOTAS OU QUINHÕES DE CAPITAL",
-     "valor_reais": 100000.0
+     "nome_completo": "JOÃO JACQUES SOARES BUSNELLO",
+     "nome_urna": "CORONEL BUSNELLO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "14",
+     "partido": "MISSÃO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002544120",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 950000.0,
+       "n_bens": 2,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA DE VILA",
+       "valor_reais": 750000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "FIAT TORO",
+       "valor_reais": 200000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "tipo_bem": "Caderneta de poupança",
-     "descricao": "CADERNETA DE POUPANÇA",
-     "valor_reais": 7487.18
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS)",
-     "valor_reais": 14.37
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "DEPÓSITO BANCÁRIO EM CONTA CORRENTE NO PAÍS",
-     "valor_reais": 1.0
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "DEPÓSITO BANCÁRIO EM CONTA CORRENTE NO PAÍS",
-     "valor_reais": 1.0
-    }
-   ],
-   "processos": [],
-   "processos_coletados": false
-  },
-  {
-   "nome_completo": "JOÃO JACQUES SOARES BUSNELLO",
-   "nome_urna": "CORONEL BUSNELLO",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "14",
-   "partido": "MISSÃO",
-   "coligacao": "PARTIDO ISOLADO",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002544120",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [],
-   "patrimonio": [
-    {
-     "ano": 2026,
-     "total_nominal": 950000.0,
-     "n_bens": 2,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
-    {
-     "tipo_bem": "Casa",
-     "descricao": "CASA DE VILA",
-     "valor_reais": 750000.0
-    },
-    {
-     "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
-     "descricao": "FIAT TORO",
-     "valor_reais": 200000.0
-    }
-   ],
-   "processos": [],
-   "processos_coletados": false
-  },
-  {
-   "nome_completo": "CYRO GARCIA",
-   "nome_urna": "CYRO GARCIA",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "16",
-   "partido": "PSTU",
-   "coligacao": "PARTIDO ISOLADO",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002540198",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [
-    {
-     "ano": 2022,
-     "cargo": "Governador",
+     "nome_completo": "CYRO GARCIA",
+     "nome_urna": "CYRO GARCIA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "16",
      "partido": "PSTU",
-     "resultado": "NÃO ELEITO",
-     "situacao": "APTO",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
-    }
-   ],
-   "patrimonio": [
-    {
-     "ano": 2022,
-     "total_nominal": 164760.0,
-     "n_bens": 2,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002540198",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [
+      {
+       "ano": 2022,
+       "cargo": "Governador",
+       "partido": "PSTU",
+       "resultado": "NÃO ELEITO",
+       "situacao": "APTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      }
+     ],
+     "patrimonio": [
+      {
+       "ano": 2022,
+       "total_nominal": 164760.0,
+       "n_bens": 2,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2026,
+       "total_nominal": 385400.0,
+       "n_bens": 2,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "IMOVEL LOCALIZADO NA AVENIDA MARECHAL RONDON, 500/301",
+       "valor_reais": 358000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "CELTA ANO 2010 - MODELO 2011",
+       "valor_reais": 27400.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "ano": 2026,
-     "total_nominal": 385400.0,
-     "n_bens": 2,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
-    {
-     "tipo_bem": "Apartamento",
-     "descricao": "IMOVEL LOCALIZADO NA AVENIDA MARECHAL RONDON, 500/301",
-     "valor_reais": 358000.0
+     "nome_completo": "DOUGLAS RUAS DOS SANTOS",
+     "nome_urna": "DOUGLAS RUAS",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "22",
+     "partido": "PL",
+     "coligacao": "RIO REAL",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002542887",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1467687.88,
+       "n_bens": 18,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "APLICAÇAO ITAU",
+       "valor_reais": 315282.04
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS DE EMPRESA",
+       "valor_reais": 300000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS DE EMPRESA",
+       "valor_reais": 225000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "FUNDO DE INVESTIMENTO ITAU RENDA FIXA",
+       "valor_reais": 124663.57
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "BRADESCO",
+       "valor_reais": 111957.71
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "IMOVEL",
+       "valor_reais": 83000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "IMOVEL",
+       "valor_reais": 60000.0
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "HASHDEX FUNDO",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "ITAU KINEA RENDA FIXA",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "IMOVEL",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "IMOVEL",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "BRADESCO",
+       "valor_reais": 26605.39
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "ITAU",
+       "valor_reais": 7234.02
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "SALDO",
+       "valor_reais": 6743.73
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "FUNDO DE INVESTIMENTO",
+       "valor_reais": 3700.38
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "FUNDO DE INVESTIMENTO",
+       "valor_reais": 3499.04
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "ITAU",
+       "valor_reais": 1.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "BRADESCO",
+       "valor_reais": 1.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
-     "descricao": "CELTA ANO 2010 - MODELO 2011",
-     "valor_reais": 27400.0
-    }
-   ],
-   "processos": [],
-   "processos_coletados": false
-  },
-  {
-   "nome_completo": "DOUGLAS RUAS DOS SANTOS",
-   "nome_urna": "DOUGLAS RUAS",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "22",
-   "partido": "PL",
-   "coligacao": "RIO REAL",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002542887",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [],
-   "patrimonio": [
-    {
-     "ano": 2026,
-     "total_nominal": 1467687.88,
-     "n_bens": 18,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "APLICAÇAO ITAU",
-     "valor_reais": 315282.04
+     "nome_completo": "EDUARDO DA COSTA PAES",
+     "nome_urna": "EDUARDO PAES",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "55",
+     "partido": "PSD",
+     "coligacao": "JUNTOS PARA MUDAR CORAGEM PARA RECONSTRUIR",
+     "situacao": "DEFERIDO COM RECURSO",
+     "sq_candidato": "190002543380",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [
+      {
+       "ano": 2018,
+       "cargo": "Governador",
+       "partido": "DEM",
+       "resultado": "NÃO ELEITO",
+       "situacao": "APTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      }
+     ],
+     "patrimonio": [
+      {
+       "ano": 2018,
+       "total_nominal": 325678.17,
+       "n_bens": 6,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2026,
+       "total_nominal": 189210.63,
+       "n_bens": 7,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "VEÍCULO",
+       "valor_reais": 150000.0
+      },
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "VGBL BRASIL PREV",
+       "valor_reais": 32811.38
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 2750.9
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 2397.49
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 1085.74
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 115.54
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "RENDA FIXA",
+       "valor_reais": 49.58
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "tipo_bem": "Quotas ou quinhões de capital",
-     "descricao": "QUOTAS DE EMPRESA",
-     "valor_reais": 300000.0
+     "nome_completo": "ANTHONY WILLIAM GAROTINHO MATHEUS DE OLIVEIRA",
+     "nome_urna": "GAROTINHO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "10",
+     "partido": "REPUBLICANOS",
+     "coligacao": "CORAGEM PARA MUDAR",
+     "situacao": "INDEFERIDO EM PRAZO RECURSAL OU COM RECURSO",
+     "sq_candidato": "190002550196",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [
+      {
+       "ano": 2018,
+       "cargo": "Governador",
+       "partido": "PRP",
+       "resultado": "NÃO ELEITO",
+       "situacao": "INAPTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      }
+     ],
+     "patrimonio": [
+      {
+       "ano": 2018,
+       "total_nominal": 205174.2,
+       "n_bens": 5,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2026,
+       "total_nominal": 167585.05,
+       "n_bens": 8,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "IMOVEL",
+       "valor_reais": 45000.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
+       "valor_reais": 33448.22
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "EMPRESTIMO CONCEDIDO",
+       "valor_reais": 33174.2
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "INFORMADO POR CNPJ 60.746.948/0001-12",
+       "valor_reais": 28267.74
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
+       "valor_reais": 22267.74
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
+       "valor_reais": 2587.37
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "TERRENO",
+       "valor_reais": 2000.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
+       "valor_reais": 839.78
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "tipo_bem": "Quotas ou quinhões de capital",
-     "descricao": "QUOTAS DE EMPRESA",
-     "valor_reais": 225000.0
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "FUNDO DE INVESTIMENTO ITAU RENDA FIXA",
-     "valor_reais": 124663.57
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "BRADESCO",
-     "valor_reais": 111957.71
-    },
-    {
-     "tipo_bem": "Outros bens imóveis",
-     "descricao": "IMOVEL",
-     "valor_reais": 83000.0
-    },
-    {
-     "tipo_bem": "Outros bens imóveis",
-     "descricao": "IMOVEL",
-     "valor_reais": 60000.0
-    },
-    {
-     "tipo_bem": "Outras aplicações e Investimentos",
-     "descricao": "HASHDEX FUNDO",
-     "valor_reais": 50000.0
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "ITAU KINEA RENDA FIXA",
-     "valor_reais": 50000.0
-    },
-    {
-     "tipo_bem": "Outros bens imóveis",
-     "descricao": "IMOVEL",
-     "valor_reais": 50000.0
-    },
-    {
-     "tipo_bem": "Outros bens imóveis",
-     "descricao": "IMOVEL",
-     "valor_reais": 50000.0
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "BRADESCO",
-     "valor_reais": 26605.39
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "ITAU",
-     "valor_reais": 7234.02
-    },
-    {
-     "tipo_bem": "Caderneta de poupança",
-     "descricao": "SALDO",
-     "valor_reais": 6743.73
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "FUNDO DE INVESTIMENTO",
-     "valor_reais": 3700.38
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "FUNDO DE INVESTIMENTO",
-     "valor_reais": 3499.04
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "ITAU",
-     "valor_reais": 1.0
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "BRADESCO",
-     "valor_reais": 1.0
-    }
-   ],
-   "processos": [],
-   "processos_coletados": false
-  },
-  {
-   "nome_completo": "EDUARDO DA COSTA PAES",
-   "nome_urna": "EDUARDO PAES",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "55",
-   "partido": "PSD",
-   "coligacao": "JUNTOS PARA MUDAR CORAGEM PARA RECONSTRUIR",
-   "situacao": "DEFERIDO COM RECURSO",
-   "sq_candidato": "190002543380",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [
-    {
-     "ano": 2018,
-     "cargo": "Governador",
-     "partido": "DEM",
-     "resultado": "NÃO ELEITO",
-     "situacao": "APTO",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
-    }
-   ],
-   "patrimonio": [
-    {
-     "ano": 2018,
-     "total_nominal": 325678.17,
-     "n_bens": 6,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
-    },
-    {
-     "ano": 2026,
-     "total_nominal": 189210.63,
-     "n_bens": 7,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
-    {
-     "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
-     "descricao": "VEÍCULO",
-     "valor_reais": 150000.0
-    },
-    {
-     "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
-     "descricao": "VGBL BRASIL PREV",
-     "valor_reais": 32811.38
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "CONTA CORRENTE",
-     "valor_reais": 2750.9
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "CONTA CORRENTE",
-     "valor_reais": 2397.49
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "CONTA CORRENTE",
-     "valor_reais": 1085.74
-    },
-    {
-     "tipo_bem": "Depósito bancário em conta corrente no País",
-     "descricao": "CONTA CORRENTE",
-     "valor_reais": 115.54
-    },
-    {
-     "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
-     "descricao": "RENDA FIXA",
-     "valor_reais": 49.58
-    }
-   ],
-   "processos": [],
-   "processos_coletados": false
-  },
-  {
-   "nome_completo": "ANTHONY WILLIAM GAROTINHO MATHEUS DE OLIVEIRA",
-   "nome_urna": "GAROTINHO",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "10",
-   "partido": "REPUBLICANOS",
-   "coligacao": "CORAGEM PARA MUDAR",
-   "situacao": "INDEFERIDO EM PRAZO RECURSAL OU COM RECURSO",
-   "sq_candidato": "190002550196",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [
-    {
-     "ano": 2018,
-     "cargo": "Governador",
-     "partido": "PRP",
-     "resultado": "NÃO ELEITO",
-     "situacao": "INAPTO",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
-    }
-   ],
-   "patrimonio": [
-    {
-     "ano": 2018,
-     "total_nominal": 205174.2,
-     "n_bens": 5,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
-    },
-    {
-     "ano": 2026,
-     "total_nominal": 167585.05,
-     "n_bens": 8,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
-    {
-     "tipo_bem": "Outros bens imóveis",
-     "descricao": "IMOVEL",
-     "valor_reais": 45000.0
-    },
-    {
-     "tipo_bem": "OUTROS BENS E DIREITOS",
-     "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
-     "valor_reais": 33448.22
-    },
-    {
-     "tipo_bem": "OUTROS BENS E DIREITOS",
-     "descricao": "EMPRESTIMO CONCEDIDO",
-     "valor_reais": 33174.2
-    },
-    {
-     "tipo_bem": "OUTROS BENS E DIREITOS",
-     "descricao": "INFORMADO POR CNPJ 60.746.948/0001-12",
-     "valor_reais": 28267.74
-    },
-    {
-     "tipo_bem": "OUTROS BENS E DIREITOS",
-     "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
-     "valor_reais": 22267.74
-    },
-    {
-     "tipo_bem": "OUTROS BENS E DIREITOS",
-     "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
-     "valor_reais": 2587.37
-    },
-    {
-     "tipo_bem": "Terreno",
-     "descricao": "TERRENO",
-     "valor_reais": 2000.0
-    },
-    {
-     "tipo_bem": "OUTROS BENS E DIREITOS",
-     "descricao": "VALOR INFORMADO POR CNPJ 60.746.948/0001-12",
-     "valor_reais": 839.78
-    }
-   ],
-   "processos": [],
-   "processos_coletados": false
-  },
-  {
-   "nome_completo": "JULIETE PANTOJA ALVES",
-   "nome_urna": "JULIETE",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "80",
-   "partido": "UP",
-   "coligacao": "PARTIDO ISOLADO",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002547272",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [
-    {
-     "ano": 2022,
-     "cargo": "Governador",
+     "nome_completo": "JULIETE PANTOJA ALVES",
+     "nome_urna": "JULIETE",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "80",
      "partido": "UP",
-     "resultado": "NÃO ELEITO",
-     "situacao": "APTO",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
-    }
-   ],
-   "patrimonio": [
-    {
-     "ano": 2022,
-     "total_nominal": 203.99,
-     "n_bens": 1,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip",
-     "data_consulta": "2026-09-26T01:10:50-03:00"
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002547272",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [
+      {
+       "ano": 2022,
+       "cargo": "Governador",
+       "partido": "UP",
+       "resultado": "NÃO ELEITO",
+       "situacao": "APTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      }
+     ],
+     "patrimonio": [
+      {
+       "ano": 2022,
+       "total_nominal": 203.99,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2026,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [],
+     "processos": [],
+     "processos_coletados": false
     },
     {
-     "ano": 2026,
-     "total_nominal": null,
-     "n_bens": 0,
-     "status_coleta": "nao_encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
+     "nome_completo": "LUAN MONTEIRO PASCHOAL PIRES",
+     "nome_urna": "LUAN MONTEIRO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "29",
+     "partido": "PCO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002552513",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "WILLIAM CARLOS BRUM BISPO",
+     "nome_urna": "WILLIAM SIRI",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "50",
+     "partido": "PSOL",
+     "coligacao": "FEDERAÇÃO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002536162",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T01:39:32-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 120000.0,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T01:39:32-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPACAO SOCIETARIA EMPRESA: CASAS THEREZA PRODUTOS ALIMENTICIOS LTDA",
+       "valor_reais": 120000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     }
-   ],
-   "bens": [],
-   "processos": [],
-   "processos_coletados": false
+   ]
   },
-  {
-   "nome_completo": "LUAN MONTEIRO PASCHOAL PIRES",
-   "nome_urna": "LUAN MONTEIRO",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "29",
-   "partido": "PCO",
-   "coligacao": "PARTIDO ISOLADO",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002552513",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [],
-   "patrimonio": [
+  "SEN": {
+   "nome": "Senador",
+   "candidatos": [
     {
-     "ano": 2026,
-     "total_nominal": null,
-     "n_bens": 0,
-     "status_coleta": "nao_encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
+     "nome_completo": "LUIZ ANDRE DE MOURA MONTEIRO",
+     "nome_urna": "ANDRÉ MONTEIRO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "350",
+     "partido": "DEMOCRATA",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": null,
+     "sq_candidato": "190002550192",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [
+      {
+       "ano": 2018,
+       "cargo": "Governador",
+       "partido": "PRTB",
+       "resultado": "NÃO ELEITO",
+       "situacao": "APTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      }
+     ],
+     "patrimonio": [
+      {
+       "ano": 2018,
+       "total_nominal": 195000.0,
+       "n_bens": 2,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2026,
+       "total_nominal": 281839.19,
+       "n_bens": 5,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "50% BRAVO 1 SOLUCOES PATRIMONIAIS LTDA.07.510.433/0001-36",
+       "valor_reais": 100000.0
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "50,27% HAZAK SEGURANCA E VIGILANCIA LTDA 59.632.151/0001-05",
+       "valor_reais": 92000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "TOYOTA RAV 2013",
+       "valor_reais": 79000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "ITAU 9177 19941-2",
+       "valor_reais": 7028.89
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "BRADESCO  1975/320314-0",
+       "valor_reais": 3810.3
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "BENEDITA SOUZA DA SILVA SAMPAIO",
+     "nome_urna": "BENEDITA DA SILVA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "131",
+     "partido": "PT",
+     "coligacao": "JUNTOS PARA MUDAR CORAGEM PARA RECONSTRUIR",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002548141",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1304312.81,
+       "n_bens": 10,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outros fundos",
+       "descricao": "FUNDOS DE INVESTIMENTOS",
+       "valor_reais": 499786.65
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO ITAU",
+       "valor_reais": 268513.92
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "FRAÇÃO 1/2 APARTAMENTO",
+       "valor_reais": 170000.0
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO",
+       "valor_reais": 144665.4
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA CHAPEU MANGUEIRA",
+       "valor_reais": 80000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "CARRO",
+       "valor_reais": 72000.0
+      },
+      {
+       "tipo_bem": "Sala ou conjunto",
+       "descricao": "SALA COMERCIAL",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "POUPANÇA",
+       "valor_reais": 11190.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "BRASIL PREV",
+       "valor_reais": 6008.75
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO BANCO DO BRASIL",
+       "valor_reais": 2148.09
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "CARLOS ROBERTO COELHO DE MATTOS JÚNIOR",
+     "nome_urna": "CARLOS JORDY",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "221",
+     "partido": "PL",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002542888",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1105163.23,
+       "n_bens": 3,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Casa",
+       "descricao": "SINAL: R$ 321.000  E FINANCIAMENTO DE R$ 750.000,00 EM 420 MESES",
+       "valor_reais": 1071000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "CDB BB",
+       "valor_reais": 33434.23
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "SANTANDER",
+       "valor_reais": 729.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "CARLOS FRANCISCO PORTINHO",
+     "nome_urna": "CARLOS PORTINHO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "222",
+     "partido": "PL",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002535142",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1401120.53,
+       "n_bens": 8,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Prédio residencial",
+       "descricao": "1/5 DE PREDIO",
+       "valor_reais": 416383.37
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO FINANCIADO",
+       "valor_reais": 374452.19
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "306.000 COTAS",
+       "valor_reais": 306000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "NISSAN FRONTIER 2025/2025",
+       "valor_reais": 245903.42
+      },
+      {
+       "tipo_bem": "Dinheiro em espécie - moeda nacional",
+       "descricao": "DINHEIRO EM ESPÉCIE",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO BANCO DO BRASIL",
+       "valor_reais": 7872.15
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO BANCO DO BRASIL",
+       "valor_reais": 500.0
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "QUANTDADE DE 1.7041817600 MUSD ¿ MELI DOLAR CNPJ 23.351.302/0001-00",
+       "valor_reais": 9.4
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "CLEBER RIBEIRO AFONSO",
+     "nome_urna": "COMANDANTE RIBEIRO AFONSO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "350",
+     "partido": "DEMOCRATA",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": null,
+     "sq_candidato": "190002554290",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 610728.55,
+       "n_bens": 3,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "AP FINANCIADO",
+       "valor_reais": 600000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "CEF",
+       "valor_reais": 5509.16
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "BB",
+       "valor_reais": 5219.39
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "HELIO KINAST CRUZ SECCO",
+     "nome_urna": "HELIO SECCO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "144",
+     "partido": "MISSÃO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002543961",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 385177.81,
+       "n_bens": 7,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO 302, BLOCO A, EMPREENDIMENTO PETROPOLIS RESIDENCES, CONF CONTRATO DE PROMESSA DE COMPRA E VENDA DE IMOVEL EM CONSTRUCAO, ADQ EMPURTA. PHOMINENIE VENUENUUKAUEUC EMPREENDIMENTOS IMOBILIARIOS LTDA, CNPJ 04.232.495 0001-35",
+       "valor_reais": 162908.31
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "CAMINHONETE NISSAN FRONTIER S MTX4, ANO FABRICACAO 2019, ANO MODELO 2020. CHASSI BANBD33B9LL216182 PLACA RBABE76, COR PREDOMINANTE BRANCA, ADQUIRIDA EM 30/06/2020, ALIENDA A BV FINANCEIRA S/A, 60 PARCELAS NO VALOR DE R$ 1.789.00. VALOR PAGO EM 2020 R$ 34294,00:ENTRADA 23.560,00 + 6 PARCELAS DE R$ 1.789,00. VALOR PAGO R$ 21.468,00, VALOR AGO EM 2022 R$ 21.468,00, PAGO EM 2023 R$ 21.468,00.",
+       "valor_reais": 130900.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "JEEP COMPASS SPORT2.OL, CHASSI 1C4NJCAA4FD102396.ANO FABRICAÇÃO 2014, ANO MODELO 2015. PLACA LME3175,ADQUIRIDA DE GRAZIELE FLAVA DOS SANTOS, CPF058.042.437-56, EM 13/10/2025",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "FOR FIESTA 1.6 FLEX, ANO FABRICAÇÃO 2011, ANO MODELO 2012, CHASSI 9BFZF55P7C8238710, PLACA KNV5397",
+       "valor_reais": 29243.0
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPACAO SOCIEDADE EMPRESARIA UNIPESSOALALCO CONSULTORIA LTDA - ME, CNPJ 20.496.514/0001-91REPRESENTADOS POR 1000 (NOVECENTAS) QUOTAS, NO VALOR NOMINAL DE R$ 10,00 (DEZ REAIS) CADA UMA.CONFORME CONTRATO SOCIAL, REGISTRADO NA JUCERJA SOB N.O 3320976863-8 EM 24/06/2014 E ALTERACAO DE TRANSFORMACAO P/SOCIEDADE UNIPESSOAL REGISTRADO NA JUCERJA SOB N.O 00004877067 DE 06/05/2022",
+       "valor_reais": 10000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "BANCO ITAU S/A DEPOSITO EM CONTA POUPANCA",
+       "valor_reais": 2102.6
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "DEPÓSITO TOTAL EM CONTAS BANCÁRIAS",
+       "valor_reais": 23.9
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "LUCIANO OLIVEIRA MATTOS DE SOUZA",
+     "nome_urna": "LUCIANO MATTOS",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "280",
+     "partido": "PRTB",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002552083",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 3941179.57,
+       "n_bens": 14,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO - NITERÓI/RJ",
+       "valor_reais": 1750000.0
+      },
+      {
+       "tipo_bem": "Benfeitorias",
+       "descricao": "BENFEITORIAS REALIZADAS EM TERRENOS - TERESÓPOLIS/RJ",
+       "valor_reais": 766189.59
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "VALORES EM RENDA FIXA",
+       "valor_reais": 498305.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "VALORES EM RENDA FIXA",
+       "valor_reais": 441102.62
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "LOTES - TERESÓPOLIS/RJ",
+       "valor_reais": 210000.0
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO EM NITERÓI/RJ",
+       "valor_reais": 134098.39
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "CARRO - JEEP COMPASS LONGITUDE - ANO 2019",
+       "valor_reais": 94000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "CAPITAL SOCIAL - COOMPERJ",
+       "valor_reais": 26745.27
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "VALORES EM CONTA POUPANÇA",
+       "valor_reais": 12013.44
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "VALORES EM CONTA CORRENTE",
+       "valor_reais": 5208.34
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "VALORES EM CONTA POUPANÇA",
+       "valor_reais": 1833.37
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no exterior",
+       "descricao": "VALORES EM CONTA CORRENTE NO EXTERIOR",
+       "valor_reais": 1508.77
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no exterior",
+       "descricao": "VALORES EM CONTA CORRENTE INTERNACIONAL",
+       "valor_reais": 164.78
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "VALORES EM CONTA CORRENTE",
+       "valor_reais": 10.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "LUIZ EUGÊNIO HONORATO",
+     "nome_urna": "LUIZ EUGENIO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "290",
+     "partido": "PCO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "INDEFERIDO EM PRAZO RECURSAL OU COM RECURSO",
+     "sq_candidato": "190002552521",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [
+      {
+       "ano": 2022,
+       "cargo": "Governador",
+       "partido": "PCO",
+       "resultado": "NÃO ELEITO",
+       "situacao": "INAPTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2018,
+       "cargo": "Governador",
+       "partido": "PCO",
+       "resultado": "NÃO ELEITO",
+       "situacao": "INAPTO",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      }
+     ],
+     "patrimonio": [
+      {
+       "ano": 2018,
+       "total_nominal": 305000.0,
+       "n_bens": 2,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2018.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2022,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2022.zip",
+       "data_consulta": "2026-09-26T01:10:50-03:00"
+      },
+      {
+       "ano": 2026,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "MARCELO BEZERRA CRIVELLA",
+     "nome_urna": "MARCELO CRIVELLA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "100",
+     "partido": "REPUBLICANOS",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002550184",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 5084.74,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "RENDA FIXA",
+       "valor_reais": 5084.74
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "MARCOS DIAS PEREIRA",
+     "nome_urna": "MARCOS DIAS",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "200",
+     "partido": "PODE",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO COM RECURSO",
+     "sq_candidato": "190002545553",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1025250.0,
+       "n_bens": 5,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO",
+       "valor_reais": 800000.0
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "90% COTAS DE EMPRESA",
+       "valor_reais": 90000.0
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA",
+       "valor_reais": 65000.0
+      },
+      {
+       "tipo_bem": "Jóia, quadro, objeto de arte, de coleção, antiguidade, etc.",
+       "descricao": "JOIAS",
+       "valor_reais": 45250.0
+      },
+      {
+       "tipo_bem": "Dinheiro em espécie - moeda nacional",
+       "descricao": "DINHEIRO",
+       "valor_reais": 25000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "MICHELLY XAVIER DE SOUZA",
+     "nome_urna": "MICHELLY XAVIER",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "800",
+     "partido": "UP",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002548589",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 33000.0,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "COBALT 2012",
+       "valor_reais": 33000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "MONICA TEREZA AZEREDO BENICIO",
+     "nome_urna": "MONICA BENICIO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "500",
+     "partido": "PSOL",
+     "coligacao": "FEDERAÇÃO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002536164",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "PAULA ANDREIA ALMEIDA FALCAO",
+     "nome_urna": "PAULA FALCÃO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "160",
+     "partido": "PSTU",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002539827",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 38200.0,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "FIAT PALIO ATTRACTIVE 1.0 EVO FIRE FLEX 8V 5L MODELO14/15",
+       "valor_reais": 38200.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "PEDRO PAULO CARVALHO TEIXEIRA",
+     "nome_urna": "PEDRO PAULO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "555",
+     "partido": "PSD",
+     "coligacao": "JUNTOS PARA MUDAR CORAGEM PARA RECONSTRUIR",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002548145",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1799844.05,
+       "n_bens": 19,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "RENDA FIXA",
+       "valor_reais": 300000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "CDB",
+       "valor_reais": 250000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "RENDA FIXA",
+       "valor_reais": 235516.78
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "OUTRAS APLICAÇÕES E INVESTIMENTOS",
+       "valor_reais": 220000.0
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "OUTRAS APLICAÇÕES E INVESTIMENTOS",
+       "valor_reais": 158117.6
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "OUTRAS APLICAÇÕES E INVESTIMENTOS",
+       "valor_reais": 158110.8
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "OUTRAS APLICAÇÕES E INVESTIMENTOS",
+       "valor_reais": 148907.4
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "OUTRAS APLICAÇÕES E INVESTIMENTOS",
+       "valor_reais": 98711.27
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "OUTRAS APLICAÇÕES E INVESTIMENTOS",
+       "valor_reais": 81300.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "CDB",
+       "valor_reais": 55776.84
+      },
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "VGBL",
+       "valor_reais": 31799.66
+      },
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "VGBL",
+       "valor_reais": 29393.22
+      },
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "VGBL",
+       "valor_reais": 21931.25
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 6808.29
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 3054.61
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 172.1
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "POUPANÇA",
+       "valor_reais": 170.06
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "CDB",
+       "valor_reais": 62.98
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE",
+       "valor_reais": 11.19
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "VINICIUS BENEVIDES DOS SANTOS CONCEICAO",
+     "nome_urna": "VINICIUS BENEVIDES",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "808",
+     "partido": "UP",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002548590",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "WAGNER DOS SANTOS CARNEIRO",
+     "nome_urna": "WAGUINHO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "101",
+     "partido": "REPUBLICANOS",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "PENDENTE DE JULGAMENTO",
+     "sq_candidato": "190002550182",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 932763.3,
+       "n_bens": 4,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA",
+       "valor_reais": 312283.0
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO",
+       "valor_reais": 298000.0
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA",
+       "valor_reais": 272480.3
+      },
+      {
+       "tipo_bem": "Loja",
+       "descricao": "LOJA",
+       "valor_reais": 50000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "CLEMENTE SEBASTIÃO DE ALMEIDA CAMPOS",
+     "nome_urna": "Ó CLEMENTE",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "355",
+     "partido": "DEMOCRATA",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "190002550190",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 125969.72,
+       "n_bens": 7,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "HONDA CITY 2021/2021",
+       "valor_reais": 97800.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "BB CDB",
+       "valor_reais": 16057.6
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "OUROCAP",
+       "valor_reais": 4868.16
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "CDB",
+       "valor_reais": 2500.0
+      },
+      {
+       "tipo_bem": "Linha telefônica",
+       "descricao": "TELEMAR",
+       "valor_reais": 2081.92
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "BB RENDA FIXA",
+       "valor_reais": 1662.04
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "COTA BB",
+       "valor_reais": 1000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     }
-   ],
-   "bens": [],
-   "processos": [],
-   "processos_coletados": false
+   ]
   },
-  {
-   "nome_completo": "WILLIAM CARLOS BRUM BISPO",
-   "nome_urna": "WILLIAM SIRI",
-   "vinculo_confianca": "confirmado_cpf",
-   "numero": "50",
-   "partido": "PSOL",
-   "coligacao": "FEDERAÇÃO",
-   "situacao": "DEFERIDO",
-   "sq_candidato": "190002536162",
-   "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
-   "data_consulta": "2026-09-26T01:39:32-03:00",
-   "validado_por": null,
-   "validado_em": null,
-   "candidaturas_anteriores": [],
-   "patrimonio": [
+  "PRES": {
+   "nome": "Presidente da República",
+   "candidatos": [
     {
-     "ano": 2026,
-     "total_nominal": 120000.0,
-     "n_bens": 1,
-     "status_coleta": "encontrado",
-     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
-     "data_consulta": "2026-09-26T01:39:32-03:00"
-    }
-   ],
-   "bens": [
+     "nome_completo": "CLARIANA ZACARKIM BARAO",
+     "nome_urna": "CLARIANA BARAO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "27",
+     "partido": "DC",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002552484",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 1820760.17,
+       "n_bens": 7,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CONDOMINIO",
+       "valor_reais": 979500.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "LAND ROVER DISCOVERY SPORT",
+       "valor_reais": 376006.08
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "EDIFÍCIO",
+       "valor_reais": 261759.38
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "RESIDENCIAL FINACIADA BRADESCO",
+       "valor_reais": 107409.5
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "RESIDENCIAL SFH CEF",
+       "valor_reais": 90933.51
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "TERRENO FRAÇÃO",
+       "valor_reais": 5000.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO BRADESCO",
+       "valor_reais": 151.7
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
     {
-     "tipo_bem": "Outras participações societárias",
-     "descricao": "PARTICIPACAO SOCIETARIA EMPRESA: CASAS THEREZA PRODUTOS ALIMENTICIOS LTDA",
-     "valor_reais": 120000.0
+     "nome_completo": "EDMILSON SILVA COSTA",
+     "nome_urna": "EDMILSON COSTA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "21",
+     "partido": "PCB",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002551975",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 454485.68,
+       "n_bens": 4,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "50% DO APARTAMENTO",
+       "valor_reais": 350000.0
+      },
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "VALOR",
+       "valor_reais": 52850.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "VALOR APLICADO",
+       "valor_reais": 51403.07
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "VALOR APLICADO",
+       "valor_reais": 232.61
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "AUGUSTO JORGE CURY",
+     "nome_urna": "ESCRITOR AUGUSTO CURY",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "70",
+     "partido": "AVANTE",
+     "coligacao": "BRASIL DOS NOSSOS SONHOS",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002551547",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 242593012.43,
+       "n_bens": 60,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "EMPRÉSTIMO MUTUO - FILADÉLFIA NATURE PARTICIPAÇÕES",
+       "valor_reais": 121190451.65
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "SÓCIO PARTICIPANTE - FICTOR INVEST LTDA",
+       "valor_reais": 31500000.0
+      },
+      {
+       "tipo_bem": "Ações (inclusive as provenientes de linha telefônica)",
+       "descricao": "ATIVOS NEGOCIADOS BDR",
+       "valor_reais": 25827960.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "FILADÉLFIA NATURE PARTICIPAÇÕES E EMPREENDIMENTOS LTDA",
+       "valor_reais": 15607925.0
+      },
+      {
+       "tipo_bem": "Ações (inclusive as provenientes de linha telefônica)",
+       "descricao": "AÇÕES BBDC3",
+       "valor_reais": 7090180.0
+      },
+      {
+       "tipo_bem": "Prédio residencial",
+       "descricao": "PRÉDIO URBANO",
+       "valor_reais": 6623800.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "COTAS DE CAPITAL - FLORIDA INVESTIMENTOS PARTICIPAÇÕES LTDA",
+       "valor_reais": 4739990.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "EMPRÉSTIMO CONCEDIDO - INTELLIENCE SCHOOL LLC",
+       "valor_reais": 4125172.3
+      },
+      {
+       "tipo_bem": "Prédio comercial",
+       "descricao": "PRÉDIO COMERCIAL",
+       "valor_reais": 3200000.0
+      },
+      {
+       "tipo_bem": "Crédito decorrente de alienação",
+       "descricao": "DE QUOTAS - FACULDADE METROPOLITANA",
+       "valor_reais": 2950000.0
+      },
+      {
+       "tipo_bem": "Fundo de Longo Prazo e Fundo de Investimentos em Direitos Creditórios (FIDC)",
+       "descricao": "NAVI ENERGIAS SUSTENTÁVEIS II FIP INFRAESTRUTURA",
+       "valor_reais": 2733124.44
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "80% DE PARTICIPAÇÃO - LOVE STORY JOSEFINA LLC",
+       "valor_reais": 2570476.79
+      },
+      {
+       "tipo_bem": "Fundo de Curto Prazo",
+       "descricao": "FUNDO BB GESTÃO DE RECURSOS",
+       "valor_reais": 2558575.5
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "50% DE ÁREA EM CONDOMINIO",
+       "valor_reais": 2150000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA SANTOS REIS",
+       "valor_reais": 1325721.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA TAMBORIL E SOBRADINHO",
+       "valor_reais": 1000000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA PERNAMBUCO",
+       "valor_reais": 1000000.0
+      },
+      {
+       "tipo_bem": "Ações (inclusive as provenientes de linha telefônica)",
+       "descricao": "AÇÕES PETR4",
+       "valor_reais": 799500.0
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "40% ÁREA EM FAZENDA",
+       "valor_reais": 603288.0
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO",
+       "valor_reais": 560000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "ESTÂNCIA ECOLÓGICA EM COLINA/SP",
+       "valor_reais": 520750.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA LAVARINTO",
+       "valor_reais": 500060.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA",
+       "valor_reais": 342503.28
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "50% DAS COTAS DE PARTICIPAÇÃO SOCIETÁRIA NA EMPRESA FREE MIND PUBLISH KKC, SITUADA NOS ESTADOS UNIDOS",
+       "valor_reais": 268524.91
+      },
+      {
+       "tipo_bem": "Outros créditos e poupança vinculados",
+       "descricao": "CRÉDITOS EM TRÂNSITO",
+       "valor_reais": 247299.54
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "SALDO CDB",
+       "valor_reais": 223970.64
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA SOBRADINHO/CORUMBÁ",
+       "valor_reais": 201727.91
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA MARAVILHA/SAGARANA",
+       "valor_reais": 200000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA PERNAMBUCO",
+       "valor_reais": 180000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA CRUZ DA RETIRADA BONITA",
+       "valor_reais": 180000.0
+      },
+      {
+       "tipo_bem": "Outros bens móveis",
+       "descricao": "SÍTIO FIGUEIRA",
+       "valor_reais": 180000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA SOBRADINHO",
+       "valor_reais": 176854.5
+      },
+      {
+       "tipo_bem": "Prédio comercial",
+       "descricao": "PRÉDIO COMERCIAL",
+       "valor_reais": 164654.85
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "APARTAMENTO",
+       "valor_reais": 160809.6
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "CAPITAL SOCIAL - SICOOB",
+       "valor_reais": 150582.92
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "64% DE PARTICIPAÇÃO - INTELLIGENCE SCHOOL LLC",
+       "valor_reais": 115362.06
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA SERRA BRANCA",
+       "valor_reais": 110000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA CAMPINA VERDE",
+       "valor_reais": 104998.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "INSTITUTO ACADEMIA DE INTELIGENCIA LTDA",
+       "valor_reais": 95000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "18,25% DE IMÓVEL",
+       "valor_reais": 46775.35
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA PRATA",
+       "valor_reais": 45128.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no exterior",
+       "descricao": "SALDO EM CONTA",
+       "valor_reais": 40267.95
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "5% DE PARTICIPAÇÃO SOCIETÁRIA NA EMPRESA CURY ACADEMIA COMPORTAMENTAL LLC, SITUADA NOS ESTADOS UNIDOS",
+       "valor_reais": 37710.4
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA",
+       "valor_reais": 36102.52
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "18,25% DE IMÓVEL",
+       "valor_reais": 26597.48
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA",
+       "valor_reais": 16254.76
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA SERRA BRANCA",
+       "valor_reais": 14535.7
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no exterior",
+       "descricao": "SALDO EM CONTA",
+       "valor_reais": 11500.04
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "BRADESCO",
+       "valor_reais": 9757.42
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "FAZENDA SALTO E PONTE",
+       "valor_reais": 9025.63
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "100% DE PARTICIPAÇÃO NA EMPRESA CONTEMPLARE INVESTMENTS LLC",
+       "valor_reais": 5114.6
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "18,25% DE IMÓVEL",
+       "valor_reais": 4388.94
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "BANCO 001",
+       "valor_reais": 3918.95
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA",
+       "valor_reais": 1866.02
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA",
+       "valor_reais": 1518.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA",
+       "valor_reais": 1361.47
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "CAPITAL SOCIAL - COOPERATIVA DE CRÉDITO DE PROD. RURAIS DO TRIÂNGULO MINEIRO",
+       "valor_reais": 941.3
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "CONTEMPLARE INTELIGÊNCIA IMOBILIÁRIA LTDA",
+       "valor_reais": 500.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS DE CAPITAL - ACADEMIA DE GESTÃO DA EMOÇÃO LTDA",
+       "valor_reais": 244.0
+      },
+      {
+       "tipo_bem": "Outros créditos e poupança vinculados",
+       "descricao": "BANCO 001",
+       "valor_reais": 241.01
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "FLAVIO NANTES BOLSONARO",
+     "nome_urna": "FLAVIO BOLSONARO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "22",
+     "partido": "PL",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002551544",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 8186555.83,
+       "n_bens": 9,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA, LAGO SUL, BRASÍLIA",
+       "valor_reais": 6226043.8
+      },
+      {
+       "tipo_bem": "Outros fundos",
+       "descricao": "FUNDO DE INVESTIMENTO EM COTAS MULTIMERCADO FIFCIC RL",
+       "valor_reais": 1090520.47
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "BANCOS DIVERSOS",
+       "valor_reais": 568730.23
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "VEÍCULO  2014",
+       "valor_reais": 133000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "SALDO CONTA POUPANÇA - BANCO ITAU",
+       "valor_reais": 103746.23
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "QUOTA E QUINHÃO DE CAPITAL",
+       "valor_reais": 46000.0
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "QUOTA OU QUINHÃO DE CAPITAL - SOCIEDADE INDIVIDUAL DE ADVOCACIA",
+       "valor_reais": 10000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "APLICAÇÃO EM CDB - BANCO DO BRASIL",
+       "valor_reais": 8266.1
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "QUOTA OU QUINHÃO DE CAPITAL",
+       "valor_reais": 249.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "HERTZ DA CONCEICAO DIAS",
+     "nome_urna": "HERTZ DIAS",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "16",
+     "partido": "PSTU",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002541457",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 170000.0,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "de 45 metros quadrados, 2 dormitórios, 1 Banheiro, 1 banheiro social, sala de estar/jantar conjugada, cozinha funcional e área de serviço integrada",
+       "valor_reais": 170000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "LEONARDO ALVES DE ARAUJO",
+     "nome_urna": "LEONARDO AVALANCHE",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "28",
+     "partido": "PRTB",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "PENDENTE DE JULGAMENTO",
+     "sq_candidato": "280002554479",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 495030000.0,
+       "n_bens": 5,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "INVESTIMENTOS EM CRIPTOMOEDAS ¿ BITCOIN",
+       "valor_reais": 491000000.0
+      },
+      {
+       "tipo_bem": "Jóia, quadro, objeto de arte, de coleção, antiguidade, etc.",
+       "descricao": "OBRAS DE ARTE",
+       "valor_reais": 2230000.0
+      },
+      {
+       "tipo_bem": "Jóia, quadro, objeto de arte, de coleção, antiguidade, etc.",
+       "descricao": "JÓIAS",
+       "valor_reais": 1200000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "100% DAS QUOTAS ¿ AVALANCHE BANK LTDA. (CNPJ 35.741.159/0001-41)",
+       "valor_reais": 500000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "100% DAS QUOTAS ¿ AVALANCHE CONSULTORIA PARTICIPAÇÃO   INCORPORAÇÃO LTDA. (CNPJ 19.152.972/0001-20)",
+       "valor_reais": 100000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "LUIZ INÁCIO LULA DA SILVA",
+     "nome_urna": "LULA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "13",
+     "partido": "PT",
+     "coligacao": "BRASIL PRONTO PRA MAIS",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002542548",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 4775650.64,
+       "n_bens": 18,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "BRASILPREV SEGUROS",
+       "valor_reais": 1923927.36
+      },
+      {
+       "tipo_bem": "VGBL - Vida Gerador de Benefício Livre",
+       "descricao": "BANCO BRADESCO",
+       "valor_reais": 1380000.0
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "64,08% DE TERRENO LOCALIZADO NO DISTRITO DO RIACHO GRANDE, SÃO BERNARDO DO CAMPO",
+       "valor_reais": 265000.0
+      },
+      {
+       "tipo_bem": "Construção",
+       "descricao": "CASA EM CONSTRUÇÃO SÃO BERNARDO DO CAMPO",
+       "valor_reais": 246918.82
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "BB RF LP HIGH",
+       "valor_reais": 207917.4
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "CREDITO DECORRENTE DO DISTRATO DATADO  EM 11/2015., COM SOLICITACAO DE RESGATE,  DA QUOTA PARTE DO TERMO DE ADESAO E COMPROMISSO DE PARTICIPACAO PARA  IMPLANTACAO E CONSTRUCAO ATRAVES DA BANCOOP",
+       "valor_reais": 179298.96
+      },
+      {
+       "tipo_bem": "Fundo de Curto Prazo",
+       "descricao": "FUNDO DI PLUS AGIL",
+       "valor_reais": 132834.2
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "26,68% DE SÍTIO  NO DISTRITO DE RIACHO GRANDE, SÃO BERNARDO DO CAMPO",
+       "valor_reais": 130000.0
+      },
+      {
+       "tipo_bem": "Apartamento",
+       "descricao": "50% DO APARTAMENTO LOCALIZADO EM SÃO BERNARDO DO CAMPO",
+       "valor_reais": 94571.25
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "BRADESCO",
+       "valor_reais": 56671.07
+      },
+      {
+       "tipo_bem": "Fundo de Investimento Imobiliário",
+       "descricao": "TVRI11",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "MARCA CHEVROLET, ANO 2010/2011",
+       "valor_reais": 50000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "98% DO CAPITAL SOCIAL DA L.I.L.S PALESTRAS, EVENTOS E PUBLICAÇÕES",
+       "valor_reais": 49000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "BRADESCO FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO RENDA FIXA SIMPLES",
+       "valor_reais": 6277.62
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "SITUADO NO DISTRITO DE RIACHO GRANDE EM SÃO BERNARDO DO CAMPO",
+       "valor_reais": 2733.45
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "APLICAÇÃO FINANCEIRA - BANCO DO BRASIL",
+       "valor_reais": 485.39
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "SALDO EM CADERNETA DE POUPANÇA",
+       "valor_reais": 14.99
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "CADERNETA DE POUPANÇA",
+       "valor_reais": 0.13
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "PABLO HENRIQUE COSTA MARCAL",
+     "nome_urna": "PABLO MARÇAL",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "28",
+     "partido": "PRTB",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": null,
+     "sq_candidato": "280002553884",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 149986151.74,
+       "n_bens": 43,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - AVIATION PARTICIPAÇÕES LTDA (80%)  OUTRAS PARTICIPAÇÕES SOCIETÁRIAS",
+       "valor_reais": 80000000.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - MARÇAL HOLDING LTDA (50%)  OUTRAS PARTICIPAÇÕES SOCIETÁRIAS",
+       "valor_reais": 19871592.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "OUTRAS PARTICIPAÇÕES SOCIETÁRIAS  PARTICIPAÇÃO SOCIETÁRIA - INTEGRALIZAÇÃO CONTRATUAL (CNPJ 58.088.630/0001-40, 75%)",
+       "valor_reais": 9232500.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS)  SALDO RENDA FIXA BANCO ITAÚ - RDB/CDB",
+       "valor_reais": 6791824.75
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO - BANCO SAFRA DI MAST RF REFERENCIADO LP",
+       "valor_reais": 6644693.42
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO INCENTIVADO DE INVESTIMENTO EM INFRAESTRUTURA - ITAÚ DEB INC PÓS-FIXADO R",
+       "valor_reais": 6426476.03
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS)  BANCO ITAÚ - LETRA IMOBILIÁRIA GARANTIDA",
+       "valor_reais": 4900384.0
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "TERRENO URBANO - ALAMEDA BIRMANIA, SANTANA DE PARNAÍBA/SP",
+       "valor_reais": 4900000.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - DAMA11 R",
+       "valor_reais": 4653970.66
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - MARÇAL PARTICIPAÇÕES LTDA (90%)  OUTRAS PARTICIPAÇÕES SOCIETÁRIAS",
+       "valor_reais": 2555475.0
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "TERRENO (FRAÇÃO) RECEBIDO EM DAÇÃO EM PAGAMENTO - PIRENÓPOLIS/GO",
+       "valor_reais": 964726.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO - GENIAL CORRETORA / XEQUE-MATE FIM",
+       "valor_reais": 583498.21
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - FLAT PARTICIPAÇÕES LTDA (50%)",
+       "valor_reais": 500000.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO - XEQUE-MATE MULTIMERCADO",
+       "valor_reais": 293646.63
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "DEPÓSITO BANCÁRIO EM CONTA CORRENTE NO PAÍS  SALDO EM CONTA CORRENTE - BANCO GENIAL S.A. R",
+       "valor_reais": 234887.39
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SCP POOL ANGEL LIST II - BOSSA NOVA INVESTIMENTOS",
+       "valor_reais": 144093.4
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS)  LFT - XP INVESTIMENTOS CCTVM S.A.",
+       "valor_reais": 138314.62
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - MARÇAL LOTEAMENTO PARTICIPAÇÕES LTDA (100%)",
+       "valor_reais": 100000.0
+      },
+      {
+       "tipo_bem": "Sala ou conjunto",
+       "descricao": "SALA COMERCIAL - GOIÁS CENTER MODAS, GOIÂNIA/GO",
+       "valor_reais": 100000.0
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SCP PRIMO RICO - BOSSA NOVA INVESTIMENTOS",
+       "valor_reais": 99073.63
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SCP POOL SPORTTECH - BOSSA NOVA INVESTIMENTOS",
+       "valor_reais": 95934.56
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SCP POOL BRASIL 6 - BOSSA NOVA INVESTIMENTOS",
+       "valor_reais": 93334.35
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SCP POOL EDUTECH - BOSSA NOVA INVESTIMENTOS",
+       "valor_reais": 93148.36
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SCP POOL O ANJO - BOSSA NOVA INVESTIMENTOS",
+       "valor_reais": 80305.96
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - MCAR PATRIMONIAL LTDA (80%)",
+       "valor_reais": 80000.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "CHÁCARA EM TRINDADE/GO - CONDOMÍNIO DE CHÁCARA CANAÃ",
+       "valor_reais": 62184.33
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - TGAR11",
+       "valor_reais": 58943.3
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - ARRI11",
+       "valor_reais": 52608.36
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - RBRX11",
+       "valor_reais": 40162.42
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - GLOG11",
+       "valor_reais": 35511.16
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS)  SALDO APLICAÇÃO CDB - BANCO ITAÚ",
+       "valor_reais": 26220.6
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - TRXF11",
+       "valor_reais": 24907.87
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "DEPÓSITO BANCÁRIO EM CONTA CORRENTE NO PAÍS SALDO EM CONTA CORRENTE - XP INVESTIMENTOS CCTVM S.A.",
+       "valor_reais": 21146.41
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - IBCR11",
+       "valor_reais": 21123.51
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - IRIM11",
+       "valor_reais": 17429.47
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - HGIC11",
+       "valor_reais": 16835.19
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - KISU11",
+       "valor_reais": 15927.78
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "PARTICIPAÇÃO SOCIETÁRIA - PARVAIM GOLD MINERAÇÃO E PARTICIPAÇÕES LTDA (100%)",
+       "valor_reais": 10000.0
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "FUNDO DE INVESTIMENTO IMOBILIÁRIO - VIUR11",
+       "valor_reais": 4132.68
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "IPO DO BEM DESCRIÇÃO BEM  VALOR (R$)  APLICAÇÃO DE RENDA FIXA (CDB, RDB E OUTROS) BANCO SAFRA - SALDO EM CONTA POUPANÇA",
+       "valor_reais": 1042.59
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA CORRENTE - BANCO BTG PACTUAL S.A",
+       "valor_reais": 95.09
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA CORRENTE - BANCO ITAÚ (AG. 6374/CC 18487-4)",
+       "valor_reais": 1.01
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "SALDO EM CONTA CORRENTE - BANCO ITAÚ (AG. 6374/CC 38488-8)",
+       "valor_reais": 1.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "RENAN ANTONIO FERREIRA DOS SANTOS",
+     "nome_urna": "RENAN SANTOS",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "14",
+     "partido": "MISSÃO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002540694",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 795089.0,
+       "n_bens": 4,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outros créditos e poupança vinculados",
+       "descricao": "OUTROS CRÉDITOS E POUPANÇA VINCULADOS",
+       "valor_reais": 300000.0
+      },
+      {
+       "tipo_bem": "Bem relacionado com o exercício da atividade autônoma",
+       "descricao": "BEM RELACIONADO COM O EXERCÍCIO DA ATIVIDADE AUTÔNOMA",
+       "valor_reais": 275329.0
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "QUOTAS DE SOCIEDADE",
+       "valor_reais": 119760.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS DE CAPITAL",
+       "valor_reais": 100000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "RONALDO RAMOS CAIADO",
+     "nome_urna": "RONALDO CAIADO",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "55",
+     "partido": "PSD",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002551932",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 52557930.98,
+       "n_bens": 14,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "IMÓVEIS DO TIPO RURAL",
+       "valor_reais": 36213674.73
+      },
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "SEMOVENTES (REBANHO) - VALOR TOTAL DE MERCADO - ESTIMADO",
+       "valor_reais": 10489480.0
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "TÍTULOS ISENTOS DE TRIBUTAÇÃO (LIG/LCI/LCA/CRI/CRA)",
+       "valor_reais": 4288620.51
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS OU QUINHÕES DE CAPITAL",
+       "valor_reais": 1008634.21
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "TERRENO",
+       "valor_reais": 243037.95
+      },
+      {
+       "tipo_bem": "Outras participações societárias",
+       "descricao": "OUTRAS PARTICIPAÇÕES SOCIETÁRIAS",
+       "valor_reais": 148613.18
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "CASA",
+       "valor_reais": 70000.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "DEPÓSITOS À VISTA / NUMERÁRIO",
+       "valor_reais": 44881.89
+      },
+      {
+       "tipo_bem": "Sala ou conjunto",
+       "descricao": "SALAS OU CONJUNTOS",
+       "valor_reais": 35711.94
+      },
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "VEÍCULO AUTOMOTOR TERRESTRE",
+       "valor_reais": 7100.0
+      },
+      {
+       "tipo_bem": "Outros bens imóveis",
+       "descricao": "OUTROS BENS IMÓVEIS",
+       "valor_reais": 4640.34
+      },
+      {
+       "tipo_bem": "Outras aplicações e Investimentos",
+       "descricao": "TÍTULO DE CAPITALIZAÇÃO",
+       "valor_reais": 3385.99
+      },
+      {
+       "tipo_bem": "Ações (inclusive as provenientes de linha telefônica)",
+       "descricao": "AÇÕES",
+       "valor_reais": 133.53
+      },
+      {
+       "tipo_bem": "Outros fundos",
+       "descricao": "FUNDOS DE INVESTIMENTO",
+       "valor_reais": 16.71
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "RUI COSTA PIMENTA",
+     "nome_urna": "RUI COSTA PIMENTA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "29",
+     "partido": "PCO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002552487",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": null,
+       "n_bens": 0,
+       "status_coleta": "nao_encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "SAMARA MARTINS DA SILVA FEITOSA",
+     "nome_urna": "SAMARA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "80",
+     "partido": "UP",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002538811",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 33000.0,
+       "n_bens": 2,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Veículo automotor terrestre: caminhão, automóvel, moto, etc.",
+       "descricao": "UNO VIVACE 2016",
+       "valor_reais": 29000.0
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "POUPANÇA",
+       "valor_reais": 4000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "WILSON GRASSI JUNIOR",
+     "nome_urna": "VETERINÁRIO WILSON GRASSI",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "35",
+     "partido": "DEMOCRATA",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002548139",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 50000000.0,
+       "n_bens": 1,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "OUTROS BENS E DIREITOS",
+       "descricao": "BENS IMÓVEIS: POSSE E DIREITOS SOBRE DIVERSOS IMÓVEIS FINANCIADOS JUNTO A INSTITUIÇÕES FINANCEIRAS. ¿ PARTICIPAÇÕES SOCIETÁRIAS: PARTICIPAÇÃO NO CAPITAL SOCIAL DE DIVERSAS SOCIEDADES EMPRESARIAIS.",
+       "valor_reais": 50000000.0
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
+    },
+    {
+     "nome_completo": "ROMEU ZEMA NETO",
+     "nome_urna": "ZEMA",
+     "vinculo_confianca": "confirmado_cpf",
+     "numero": "30",
+     "partido": "NOVO",
+     "coligacao": "PARTIDO ISOLADO",
+     "situacao": "DEFERIDO",
+     "sq_candidato": "280002539826",
+     "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/consulta_cand/consulta_cand_2026.zip",
+     "data_consulta": "2026-09-26T02:15:46-03:00",
+     "validado_por": null,
+     "validado_em": null,
+     "candidaturas_anteriores": [],
+     "patrimonio": [
+      {
+       "ano": 2026,
+       "total_nominal": 178707610.09,
+       "n_bens": 18,
+       "status_coleta": "encontrado",
+       "url_origem": "https://cdn.tse.jus.br/estatistica/sead/odsele/bem_candidato/bem_candidato_2026.zip",
+       "data_consulta": "2026-09-26T02:15:46-03:00"
+      }
+     ],
+     "bens": [
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "PARTICIPAÇÃO EM HOLDING FAMILIAR",
+       "valor_reais": 94498898.0
+      },
+      {
+       "tipo_bem": "Fundos: Ações, Mútuos de Privatização, Invest. Empresas Emergentes, Invest.Participação e Invest. Índice Mercado",
+       "descricao": "FUNDO DE INVESTIMENTO MULTIMERCADO",
+       "valor_reais": 56218194.15
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "PARTICIPAÇÃO EM INSTITUIÇÃO FINANCEIRA",
+       "valor_reais": 16834806.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "APLICAÇÃO DE RENDA FIXA",
+       "valor_reais": 3964283.93
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "PARTICIPAÇÃO EM SEGURADORA",
+       "valor_reais": 3666680.0
+      },
+      {
+       "tipo_bem": "Fundos: Ações, Mútuos de Privatização, Invest. Empresas Emergentes, Invest.Participação e Invest. Índice Mercado",
+       "descricao": "FUNDO DE INVESTIMENTO EM AÇÕES",
+       "valor_reais": 1556006.67
+      },
+      {
+       "tipo_bem": "Casa",
+       "descricao": "IMÓVEL RESIDENCIAL REFORMADO",
+       "valor_reais": 704864.25
+      },
+      {
+       "tipo_bem": "Fundos: Ações, Mútuos de Privatização, Invest. Empresas Emergentes, Invest.Participação e Invest. Índice Mercado",
+       "descricao": "FUNDO DE INVESTIMENTO EM COTAS",
+       "valor_reais": 397866.26
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS EM COOPERATIVA DE CRÉDITO",
+       "valor_reais": 393000.0
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "APLICAÇÃO EM CDB",
+       "valor_reais": 337400.33
+      },
+      {
+       "tipo_bem": "Terreno",
+       "descricao": "TERRENO RECEBIDO EM DOAÇÃO",
+       "valor_reais": 70000.0
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "PARTICIPAÇÃO EM EMPRESA IMOBILIÁRIA",
+       "valor_reais": 47000.0
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE EM COOPERATIVA",
+       "valor_reais": 9848.34
+      },
+      {
+       "tipo_bem": "Aplicação de renda fixa (CDB, RDB e outros)",
+       "descricao": "FUNDO DE INVESTIMENTO RENDA FIXA",
+       "valor_reais": 4306.56
+      },
+      {
+       "tipo_bem": "Quotas ou quinhões de capital",
+       "descricao": "QUOTAS OU QUINHÕES DE CAPITAL",
+       "valor_reais": 3959.16
+      },
+      {
+       "tipo_bem": "Fundo de Longo Prazo e Fundo de Investimentos em Direitos Creditórios (FIDC)",
+       "descricao": "FUNDO DE INVESTIMENTO RENDA FIXA",
+       "valor_reais": 362.56
+      },
+      {
+       "tipo_bem": "Caderneta de poupança",
+       "descricao": "POUPANÇA BANCÁRIA",
+       "valor_reais": 119.02
+      },
+      {
+       "tipo_bem": "Depósito bancário em conta corrente no País",
+       "descricao": "CONTA CORRENTE EM COOPERATIVA",
+       "valor_reais": 14.86
+      }
+     ],
+     "processos": [],
+     "processos_coletados": false
     }
-   ],
-   "processos": [],
-   "processos_coletados": false
+   ]
   }
- ]
+ }
 }
